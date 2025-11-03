@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frota Recreio Célebre Transfers - Veículos modernos e confortáveis para transfers e tours no Norte de Portugal. Van, carrinhas e carros premium.">
+    <meta name="keywords" content="frota recreio celebre, veículos transfers, carrinhas turismo, van porto">
+    
+    <title>Frota | Recreio Célebre Transfers - Veículos Confortáveis e Seguros</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚐</text></svg>">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="./" class="logo" aria-label="Recreio Célebre Transfers - Página inicial">
+                    Recreio Célebre
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="tours/">Tours</a></li>
+                    <li><a href="transfers/">Transfers</a></li>
+                    <li><a href="fleet.html" class="active">Frota</a></li>
+                    <li><a href="portfolio.html">Galeria</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contactos</a></li>
+                </ul>
+                
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <button class="language-btn" aria-label="Selecionar idioma">
+                            <i class="bi bi-globe"></i> PT
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="pt">Português</a>
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="fr">Français</a>
+                            <a href="#" data-lang="es">Español</a>
+                        </div>
+                    </div>
+                    
+                    <button class="theme-toggle" aria-label="Alterar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    
+                    <button class="hamburger" aria-label="Menu de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main style="margin-top: 80px;">
+        
+        <!-- ===== HERO ===== -->
+        <section class="hero" style="height: 60vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1581605405669-fcdf81165afa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">A Nossa Frota</h1>
+                <p class="hero-subtitle">
+                    Veículos modernos, confortáveis e seguros<br>
+                    Para todos os tipos de viagens e grupos
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== FILTROS DE FROTA ===== -->
+        <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+            <div class="container">
+                <div class="filter-tabs fade-in">
+                    <button class="filter-btn active" data-filter="all">
+                        Todos os Veículos
+                    </button>
+                    <button class="filter-btn" data-filter="executive">
+                        Executivos
+                    </button>
+                    <button class="filter-btn" data-filter="van">
+                        Van/Carrinha
+                    </button>
+                    <button class="filter-btn" data-filter="hybrid">
+                        Híbridos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALERIA DE VEÍCULOS ===== -->
+        <section class="section">
+            <div class="container">
+                
+                <!-- Veículo 1 - Mercedes V-Class -->
+                <div class="vehicle-card card fade-in" data-category="executive van">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-image">
+                            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Mercedes V-Class Executive" 
+                                 style="width: 100%; border-radius: var(--border-radius);">
+                        </div>
+                        <div class="vehicle-info">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <h3 style="margin: 0; color: var(--primary-color);">Mercedes V-Class Executive</h3>
+                                <span class="badge" style="background-color: var(--warning-color);">Premium</span>
+                            </div>
+                            
+                            <div class="vehicle-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">👥</span>
+                                    <span class="spec-label">Passageiros:</span>
+                                    <span class="spec-value">6 pessoas</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">luggage</span>
+                                    <span class="spec-label">Bagagem:</span>
+                                    <span class="spec-value">6 malas grandes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">ac_unit</span>
+                                    <span class="spec-label">Ar Condicionado:</span>
+                                    <span class="spec-value">Zona dupla</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">wifi</span>
+                                    <span class="spec-label">Conectividade:</span>
+                                    <span class="spec-value">WiFi, USB, 220V</span>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features">
+                                <span class="feature-tag">Bancos de couro</span>
+                                <span class="feature-tag">Mesa central</span>
+                                <span class="feature-tag">Iluminação LED</span>
+                                <span class="feature-tag">Som premium</span>
+                                <span class="feature-tag">Vidros privados</span>
+                            </div>
+                            
+                            <p style="margin: 1rem 0; line-height: 1.6;">
+                                Ideal para transfers executivos e tours VIP. Interior luxuoso com bancos 
+                                em configuração de lounge, mesa central e todos os confortos para uma 
+                                viagem de primeira classe.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-primary">
+                                Reservar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veículo 2 - Mercedes Sprinter -->
+                <div class="vehicle-card card fade-in" data-category="van">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-info">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <h3 style="margin: 0; color: var(--primary-color);">Mercedes Sprinter</h3>
+                                <span class="badge" style="background-color: var(--secondary-color);">Grupos</span>
+                            </div>
+                            
+                            <div class="vehicle-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">👥</span>
+                                    <span class="spec-label">Passageiros:</span>
+                                    <span class="spec-value">16 pessoas</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">luggage</span>
+                                    <span class="spec-label">Bagagem:</span>
+                                    <span class="spec-value">16 malas grandes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">height</span>
+                                    <span class="spec-label">Altura:</span>
+                                    <span class="spec-value">2m interior</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔇</span>
+                                    <span class="spec-label">Isolamento:</span>
+                                    <span class="spec-value">Acústico reforçado</span>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features">
+                                <span class="feature-tag">Entrada baixa</span>
+                                <span class="feature-tag">Sistema PA</span>
+                                <span class="feature-tag">Cortinas</span>
+                                <span class="feature-tag">Degrau elétrico</span>
+                                <span class="feature-tag">Cintos 3 pontos</span>
+                            </div>
+                            
+                            <p style="margin: 1rem 0; line-height: 1.6;">
+                                Perfeita para grupos grandes em tours e transfers. Espaço generoso, 
+                                entrada facilitada e todos os equipamentos de segurança. Ideal para 
+                                excursões familiares ou corporativas.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-primary">
+                                Reservar Agora
+                            </a>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Mercedes Sprinter para grupos" 
+                                 style="width: 100%; border-radius: var(--border-radius);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veículo 3 - BMW X5 Híbrido -->
+                <div class="vehicle-card card fade-in" data-category="executive hybrid">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-image">
+                            <img src="https://images.unsplash.com/photo-1617816738267-81da7c2d7c8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="BMW X5 Híbrido" 
+                                 style="width: 100%; border-radius: var(--border-radius);">
+                        </div>
+                        <div class="vehicle-info">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <h3 style="margin: 0; color: var(--primary-color);">BMW X5 Híbrido</h3>
+                                <span class="badge" style="background-color: var(--success-color);">Eco</span>
+                            </div>
+                            
+                            <div class="vehicle-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">👥</span>
+                                    <span class="spec-label">Passageiros:</span>
+                                    <span class="spec-value">4 pessoas</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">luggage</span>
+                                    <span class="spec-label">Bagagem:</span>
+                                    <span class="spec-value">4 malas grandes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔋</span>
+                                    <span class="spec-label">Motor:</span>
+                                    <span class="spec-value">Híbrido plug-in</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🌱</span>
+                                    <span class="spec-label">Emissões:</span>
+                                    <span class="spec-value">Muito baixas</span>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features">
+                                <span class="feature-tag">Modo elétrico</span>
+                                <span class="feature-tag">Tração integral</span>
+                                <span class="feature-tag">HUD display</span>
+                                <span class="feature-tag">Harman Kardon</span>
+                                <span class="feature-tag">Navegação 3D</span>
+                            </div>
+                            
+                            <p style="margin: 1rem 0; line-height: 1.6;">
+                                Combina luxo e sustentabilidade. Ideal para transfers executivos com 
+                                consciência ambiental. Tecnologia de ponta e condução suave em modo 
+                                elétrico nas zonas urbanas.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-primary">
+                                Reservar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veículo 4 - Volkswagen Caravelle -->
+                <div class="vehicle-card card fade-in" data-category="van">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-info">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <h3 style="margin: 0; color: var(--primary-color);">Volkswagen Caravelle</h3>
+                                <span class="badge" style="background-color: var(--accent-color);">Familiar</span>
+                            </div>
+                            
+                            <div class="vehicle-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">👥</span>
+                                    <span class="spec-label">Passageiros:</span>
+                                    <span class="spec-value">8 pessoas</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">luggage</span>
+                                    <span class="spec-label">Bagagem:</span>
+                                    <span class="spec-value">8 malas grandes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🪑</span>
+                                    <span class="spec-label">Configuração:</span>
+                                    <span class="spec-value">2+2+2+2</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">build</span>
+                                    <span class="spec-label">Motor:</span>
+                                    <span class="spec-value">2.0 TDI Euro 6</span>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features">
+                                <span class="feature-tag">Portas duplas</span>
+                                <span class="feature-tag">Mesa removível</span>
+                                <span class="feature-tag">Janelas grandes</span>
+                                <span class="feature-tag">Kit 1ºs socorros</span>
+                                <span class="feature-tag">Seguro total</span>
+                            </div>
+                            
+                            <p style="margin: 1rem 0; line-height: 1.6;">
+                                A escolha perfeita para famílias e grupos médios. Configuração flexível 
+                                dos assentos, amplas janelas para panorâmicas e acesso facilitado. 
+                                Conforto e segurança em viagens longas.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-primary">
+                                Reservar Agora
+                            </a>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Volkswagen Caravelle" 
+                                 style="width: 100%; border-radius: var(--border-radius);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veículo 5 - Audi A6 -->
+                <div class="vehicle-card card fade-in" data-category="executive">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-image">
+                            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Audi A6" 
+                                 style="width: 100%; border-radius: var(--border-radius);">
+                        </div>
+                        <div class="vehicle-info">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <h3 style="margin: 0; color: var(--primary-color);">Audi A6 Avant</h3>
+                                <span class="badge" style="background-color: var(--warning-color);">Executivo</span>
+                            </div>
+                            
+                            <div class="vehicle-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">👥</span>
+                                    <span class="spec-label">Passageiros:</span>
+                                    <span class="spec-value">4 pessoas</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">luggage</span>
+                                    <span class="spec-label">Bagagem:</span>
+                                    <span class="spec-value">5 malas grandes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">bolt</span>
+                                    <span class="spec-label">Performance:</span>
+                                    <span class="spec-value">245 HP TDI</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">settings</span>
+                                    <span class="spec-label">Tecnologia:</span>
+                                    <span class="spec-value">Virtual Cockpit</span>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features">
+                                <span class="feature-tag">Quattro 4WD</span>
+                                <span class="feature-tag">Matrix LED</span>
+                                <span class="feature-tag">Bang & Olufsen</span>
+                                <span class="feature-tag">Cruise adaptativo</span>
+                                <span class="feature-tag">Assento massagem</span>
+                            </div>
+                            
+                            <p style="margin: 1rem 0; line-height: 1.6;">
+                                Elegância e performance para transfers executivos. Grande bagageira, 
+                                tecnologia de ponta e condução refinada. Ideal para viagens de negócios 
+                                e clientes VIP que valorizam o conforto.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-primary">
+                                Reservar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veículo 6 - Toyota Prius Híbrido -->
+                <div class="vehicle-card card fade-in" data-category="hybrid">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-info">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <h3 style="margin: 0; color: var(--primary-color);">Toyota Prius</h3>
+                                <span class="badge" style="background-color: var(--success-color);">100% Híbrido</span>
+                            </div>
+                            
+                            <div class="vehicle-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">👥</span>
+                                    <span class="spec-label">Passageiros:</span>
+                                    <span class="spec-value">4 pessoas</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="material-icons spec-icon">luggage</span>
+                                    <span class="spec-label">Bagagem:</span>
+                                    <span class="spec-value">3 malas grandes</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">⛽</span>
+                                    <span class="spec-label">Consumo:</span>
+                                    <span class="spec-value">3.5L/100km</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🔇</span>
+                                    <span class="spec-label">Ruído:</span>
+                                    <span class="spec-value">Ultra silencioso</span>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features">
+                                <span class="feature-tag">Zero emissões urbanas</span>
+                                <span class="feature-tag">Head-up display</span>
+                                <span class="feature-tag">Modo EV</span>
+                                <span class="feature-tag">Safety Sense</span>
+                                <span class="feature-tag">JBL Premium</span>
+                            </div>
+                            
+                            <p style="margin: 1rem 0; line-height: 1.6;">
+                                O futuro do transporte sustentável. Consumo mínimo, condução ultra 
+                                silenciosa e zero emissões em modo elétrico. Perfeito para transfers 
+                                urbanos e clientes eco-conscientes.
+                            </p>
+                            
+                            <a href="contact.html" class="btn btn-primary">
+                                Reservar Agora
+                            </a>
+                        </div>
+                        <div class="vehicle-image">
+                            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Toyota Prius Híbrido" 
+                                 style="width: 100%; border-radius: var(--border-radius);">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== EQUIPAMENTOS E SEGURANÇA ===== -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title fade-in">Equipamentos de Série</h2>
+                <p class="section-subtitle fade-in">
+                    Todos os nossos veículos incluem equipamentos premium para máximo conforto e segurança
+                </p>
+                
+                <div class="grid grid-4">
+                    <!-- Segurança -->
+                    <div class="text-center fade-in">
+                        <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"><span class="material-icons" style="font-size: 3rem;">security</span></div>
+                        <h3>Segurança</h3>
+                        <ul style="text-align: left; color: var(--text-secondary);">
+                            <li>Cintos de segurança 3 pontos</li>
+                            <li>Airbags frontais e laterais</li>
+                            <li>ABS e controlo de estabilidade</li>
+                            <li>Kit de primeiros socorros</li>
+                            <li>Seguro total</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Conforto -->
+                    <div class="text-center fade-in">
+                        <div style="font-size: 3rem; color: var(--success-color); margin-bottom: 1rem;"><span class="material-icons" style="font-size: 3rem;">chair</span></div>
+                        <h3>Conforto</h3>
+                        <ul style="text-align: left; color: var(--text-secondary);">
+                            <li>Ar condicionado regulável</li>
+                            <li>Assentos ergonómicos</li>
+                            <li>Janelas com vidros privados</li>
+                            <li>Isolamento acústico</li>
+                            <li>Apoios de cabeça ajustáveis</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tecnologia -->
+                    <div class="text-center fade-in">
+                        <div style="font-size: 3rem; color: var(--warning-color); margin-bottom: 1rem;"><span class="material-icons" style="font-size: 3rem;">devices</span></div>
+                        <h3>Tecnologia</h3>
+                        <ul style="text-align: left; color: var(--text-secondary);">
+                            <li>WiFi gratuito</li>
+                            <li>Tomadas USB e 220V</li>
+                            <li>Sistema de som premium</li>
+                            <li>GPS profissional</li>
+                            <li>Sistema de comunicação</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Serviços -->
+                    <div class="text-center fade-in">
+                        <div style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;">🎀</div>
+                        <h3>Serviços</h3>
+                        <ul style="text-align: left; color: var(--text-secondary);">
+                            <li>Água mineral gratuita</li>
+                            <li>Carregadores universais</li>
+                            <li>Guarda-chuvas</li>
+                            <li>Toalhitas refrescantes</li>
+                            <li>Atendimento 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MANUTENÇÃO E CERTIFICAÇÕES ===== -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Manutenção e Certificações</h2>
+                
+                <div class="grid grid-2">
+                    <!-- Manutenção -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <span class="material-icons" style="font-size: 2rem; color: var(--secondary-color);">build</span>
+                                Manutenção Preventiva
+                            </h3>
+                            <ul style="line-height: 1.8; color: var(--text-secondary);">
+                                <li>✓ Revisões a cada 10.000 km ou 6 meses</li>
+                                <li>✓ Inspeção diária antes de cada serviço</li>
+                                <li>✓ Verificação semanal de todos os sistemas</li>
+                                <li>✓ Substituição preventiva de peças de desgaste</li>
+                                <li>✓ Limpeza e desinfeção após cada viagem</li>
+                                <li>✓ Controlo de pneus e óleo semanal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Certificações -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <h3 style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <span class="material-icons" style="font-size: 2rem; color: var(--success-color);">emoji_events</span>
+                                Certificações e Licenças
+                            </h3>
+                            <ul style="line-height: 1.8; color: var(--text-secondary);">
+                                <li>✓ Licença de transporte público de passageiros</li>
+                                <li>✓ Certificação IMT (Instituto da Mobilidade)</li>
+                                <li>✓ Seguro de responsabilidade civil obrigatório</li>
+                                <li>✓ Certificado de condução profissional (CAM)</li>
+                                <li>✓ Inspeção técnica periódica em dia</li>
+                                <li>✓ Certificação turística da região Norte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESERVAS E DISPONIBILIDADE ===== -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container text-center">
+                <div class="fade-in">
+                    <h2 class="section-title">Reserve o Veículo Ideal</h2>
+                    <p class="section-subtitle">
+                        Todos os nossos veículos estão disponíveis para transfers e tours personalizados.<br>
+                        Consulte disponibilidade e obtenha um orçamento personalizado.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> Consultar Disponibilidade
+                        </a>
+                        <a href="transfers/" class="btn btn-secondary btn-lg">
+                            <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">work</span> Ver Transfers
+                        </a>
+                        <a href="tours/" class="btn btn-outline btn-lg">
+                            <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">map</span> Ver Tours
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 3rem; padding: 2rem; background-color: var(--bg-primary); border-radius: var(--border-radius); border-left: 4px solid var(--secondary-color);">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">💡 Dica Importante</h3>
+                        <p style="margin: 0; font-size: 1.1rem;">
+                            Para grupos superiores a 16 pessoas, podemos disponibilizar múltiplos veículos 
+                            com coordenação entre motoristas. Contacte-nos para soluções personalizadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recreio Célebre Transfers</h3>
+                    <p>
+                        Frota moderna e bem mantida para transfers seguros e confortáveis. 
+                        Veículos para todos os tipos de viagens no Norte de Portugal.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><span>📘</span></a>
+                        <a href="#" aria-label="Instagram"><span>📷</span></a>
+                        <a href="#" aria-label="TripAdvisor"><span>🦉</span></a>
+                        <a href="#" aria-label="Booking.com"><span>🏨</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tours/">Tours</a></li>
+                        <li><a href="transfers/">Transfers</a></li>
+                        <li><a href="fleet.html">Frota</a></li>
+                        <li><a href="portfolio.html">Galeria</a></li>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> +351 123 456 789</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">email</span> info@recreio-celebre-transfers.pt</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">location_on</span> Porto, Portugal</p>
+                    <p><strong>Atendimento:</strong> 24/7</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Idiomas</h3>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#" style="color: white; font-weight: bold;">Português</a>
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Español</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Recreio Célebre Transfers. Todos os direitos reservados.</p>
+                <p>
+                    <a href="#" style="color: inherit;">Política de Privacidade</a> | 
+                    <a href="#" style="color: inherit;">Termos de Serviço</a> | 
+                    <a href="#" style="color: inherit;">Política de Cookies</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/main.js"></script>
+    
+    <!-- JavaScript específico para filtros da frota -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sistema de filtros da frota
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const vehicleCards = document.querySelectorAll('.vehicle-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Atualizar botões ativos
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filtrar veículos
+                    vehicleCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category.includes(filter)) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

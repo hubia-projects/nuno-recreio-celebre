@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria Recreio Célebre Transfers - Destinos incríveis, momentos únicos e experiências inesquecíveis no Norte de Portugal.">
+    <meta name="keywords" content="galeria recreio celebre, fotos tours, destinos norte portugal, douro aveiro">
+    
+    <title>Galeria | Recreio Célebre Transfers - Destinos e Experiências</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232c3e50'><path d='M18 16h2v-3c0-1.1-.9-2-2-2h-6.5l1.5-3H18v2l3-3-3-3v2h-6c-.8 0-1.5.4-1.9 1.1L8.1 10H5c-1.1 0-2 .9-2 2v4h2c0 1.1.9 2 2 2s2-.9 2-2h8c0 1.1.9 2 2 2s2-.9 2-2zM7 16c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm12 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z'/></svg>">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="./" class="logo" aria-label="Recreio Célebre Transfers - Página inicial">
+                    Recreio Célebre
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="tours/">Tours</a></li>
+                    <li><a href="transfers/">Transfers</a></li>
+                    <li><a href="portfolio.html" class="active">Galeria</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contactos</a></li>
+                </ul>
+                
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <button class="language-btn" aria-label="Selecionar idioma">
+                            <i class="bi bi-globe"></i> PT
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="pt">Português</a>
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="fr">Français</a>
+                            <a href="#" data-lang="es">Español</a>
+                        </div>
+                    </div>
+                    
+                    <button class="theme-toggle" aria-label="Alterar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    
+                    <button class="hamburger" aria-label="Menu de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main style="margin-top: 80px;">
+        
+        <!-- ===== HERO ===== -->
+        <section class="hero" style="height: 60vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1566055844781-47e208c64ee7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Galeria de Destinos</h1>
+                <p class="hero-subtitle">
+                    Momentos únicos e paisagens deslumbrantes<br>
+                    Descubra a beleza do Norte de Portugal através dos nossos olhos
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== FILTROS DE GALERIA ===== -->
+        <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+            <div class="container">
+                <div class="filter-tabs fade-in">
+                    <button class="filter-btn active" data-filter="all">
+                        Todas as Fotos
+                    </button>
+                    <button class="filter-btn" data-filter="douro">
+                        Vale do Douro
+                    </button>
+                    <button class="filter-btn" data-filter="porto">
+                        Porto
+                    </button>
+                    <button class="filter-btn" data-filter="aveiro">
+                        Aveiro
+                    </button>
+                    <button class="filter-btn" data-filter="braga">
+                        Braga & Guimarães
+                    </button>
+                    <button class="filter-btn" data-filter="outros">
+                        Outros Destinos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALERIA PRINCIPAL ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="gallery-grid">
+                    
+                    <!-- Imagem 1 - Vale do Douro -->
+                    <div class="gallery-item fade-in" data-category="douro">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Vinhas do Vale do Douro ao pôr do sol"
+                             class="gallery-image"
+                             data-title="Vinhas Douradas do Douro"
+                             data-description="As famosas vinhas em socalcos do Vale do Douro durante o pôr do sol outonal">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Vinhas Douradas do Douro</h3>
+                                <p>Vale do Douro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 2 - Porto -->
+                    <div class="gallery-item fade-in" data-category="porto">
+                        <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Ponte Dom Luís I e casas coloridas do Porto"
+                             class="gallery-image"
+                             data-title="Ponte Dom Luís I"
+                             data-description="Vista icónica da ponte sobre o Rio Douro com as coloridas casas da Ribeira">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Ponte Dom Luís I</h3>
+                                <p>Porto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 3 - Aveiro -->
+                    <div class="gallery-item fade-in" data-category="aveiro">
+                        <img src="https://images.unsplash.com/photo-1591890243251-cef6b4bcc0e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Barcos moliceiros coloridos nos canais de Aveiro"
+                             class="gallery-image"
+                             data-title="Moliceiros de Aveiro"
+                             data-description="Os tradicionais barcos moliceiros coloridos navegando pelos canais da 'Veneza Portuguesa'">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Moliceiros de Aveiro</h3>
+                                <p>Aveiro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 4 - Douro River -->
+                    <div class="gallery-item fade-in" data-category="douro">
+                        <img src="https://images.unsplash.com/photo-1543832923-44667a44c804?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Cruzeiro no Rio Douro entre as vinhas"
+                             class="gallery-image"
+                             data-title="Cruzeiro no Douro"
+                             data-description="Passeio de barco no Rio Douro passando pelas quintas vinícolas">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Cruzeiro no Douro</h3>
+                                <p>Vale do Douro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 5 - Braga -->
+                    <div class="gallery-item fade-in" data-category="braga">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Santuário do Bom Jesus do Monte em Braga"
+                             class="gallery-image"
+                             data-title="Bom Jesus do Monte"
+                             data-description="O majestoso Santuário do Bom Jesus do Monte com sua icónica escadaria barroca">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Bom Jesus do Monte</h3>
+                                <p>Braga</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 6 - Livraria Lello -->
+                    <div class="gallery-item fade-in" data-category="porto">
+                        <img src="https://images.unsplash.com/photo-1585208798174-6cedd86019a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Interior da famosa Livraria Lello no Porto"
+                             class="gallery-image"
+                             data-title="Livraria Lello"
+                             data-description="A deslumbrante escadaria em espiral da famosa Livraria Lello, inspiração para Harry Potter">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Livraria Lello</h3>
+                                <p>Porto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 7 - Costa Nova -->
+                    <div class="gallery-item fade-in" data-category="aveiro">
+                        <img src="https://images.unsplash.com/photo-1599052516448-7ac9f82e4e2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Casas coloridas às riscas na Costa Nova"
+                             class="gallery-image"
+                             data-title="Costa Nova"
+                             data-description="As características casas coloridas às riscas da Costa Nova na praia de Aveiro">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Costa Nova</h3>
+                                <p>Aveiro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 8 - Quinta do Douro -->
+                    <div class="gallery-item fade-in" data-category="douro">
+                        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Quinta vinícola no Vale do Douro"
+                             class="gallery-image"
+                             data-title="Quinta Vinícola"
+                             data-description="Uma quinta tradicional do Douro rodeada pelas famosas vinhas em socalcos">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Quinta Vinícola</h3>
+                                <p>Vale do Douro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 9 - Castelo de Guimarães -->
+                    <div class="gallery-item fade-in" data-category="braga">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Castelo de Guimarães, berço de Portugal"
+                             class="gallery-image"
+                             data-title="Castelo de Guimarães"
+                             data-description="O histórico Castelo de Guimarães, berço da nação portuguesa">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Castelo de Guimarães</h3>
+                                <p>Guimarães</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 10 - Azulejos Porto -->
+                    <div class="gallery-item fade-in" data-category="porto">
+                        <img src="https://images.unsplash.com/photo-1518479149297-2b5d7a4b9cb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Azulejos tradicionais portugueses no Porto"
+                             class="gallery-image"
+                             data-title="Azulejos Portugueses"
+                             data-description="Os belíssimos azulejos azuis e brancos que decoram os edifícios históricos do Porto">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Azulejos Portugueses</h3>
+                                <p>Porto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 11 - Viana do Castelo -->
+                    <div class="gallery-item fade-in" data-category="outros">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Santuário de Santa Luzia em Viana do Castelo"
+                             class="gallery-image"
+                             data-title="Santa Luzia"
+                             data-description="Vista panorâmica do Santuário de Santa Luzia sobre Viana do Castelo e o Rio Lima">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Santa Luzia</h3>
+                                <p>Viana do Castelo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 12 - Monsaraz -->
+                    <div class="gallery-item fade-in" data-category="outros">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Vila medieval de Monsaraz"
+                             class="gallery-image"
+                             data-title="Vila de Monsaraz"
+                             data-description="A pitoresca vila medieval de Monsaraz com vista sobre a barragem do Alqueva">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Vila de Monsaraz</h3>
+                                <p>Alentejo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 13 - Praia do Minho -->
+                    <div class="gallery-item fade-in" data-category="outros">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Costa do Minho ao pôr do sol"
+                             class="gallery-image"
+                             data-title="Costa do Minho"
+                             data-description="Pôr do sol na selvática costa do Minho, com suas falésias e praias douradas">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Costa do Minho</h3>
+                                <p>Alto Minho</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 14 - Vinhas Douro Inverno -->
+                    <div class="gallery-item fade-in" data-category="douro">
+                        <img src="https://images.unsplash.com/photo-1609055398043-c6ac380ef95b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Vinhas do Douro no inverno"
+                             class="gallery-image"
+                             data-title="Douro no Inverno"
+                             data-description="As vinhas do Douro cobertas de névoa matinal durante o inverno">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Douro no Inverno</h3>
+                                <p>Vale do Douro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 15 - Amarante -->
+                    <div class="gallery-item fade-in" data-category="outros">
+                        <img src="https://images.unsplash.com/photo-1548373710-8d0a03c1aed9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Ponte de Amarante sobre o Rio Tâmega"
+                             class="gallery-image"
+                             data-title="Ponte de Amarante"
+                             data-description="A histórica ponte sobre o Rio Tâmega na romântica cidade de Amarante">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Ponte de Amarante</h3>
+                                <p>Amarante</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem 16 - Torre dos Clérigos -->
+                    <div class="gallery-item fade-in" data-category="porto">
+                        <img src="https://images.unsplash.com/photo-1523909455346-5c107c98efd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Torre dos Clérigos no Porto"
+                             class="gallery-image"
+                             data-title="Torre dos Clérigos"
+                             data-description="A icónica Torre dos Clérigos, símbolo do Porto, destacando-se no skyline da cidade">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Torre dos Clérigos</h3>
+                                <p>Porto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EXPERIÊNCIAS DOS CLIENTES ===== -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title fade-in">Experiências dos Nossos Clientes</h2>
+                <p class="section-subtitle fade-in">
+                    Momentos especiais capturados durante os nossos tours
+                </p>
+                
+                <div class="grid grid-3">
+                    <!-- Experiência 1 -->
+                    <div class="card fade-in">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Família feliz durante tour ao Douro" 
+                             style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius) var(--border-radius) 0 0;">
+                        <div class="card-content">
+                            <h3>Família Thompson - Reino Unido</h3>
+                            <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1rem;">
+                                "Uma experiência inesquecível no Vale do Douro! A nossa guia Maria foi fantástica 
+                                e os vinhos que provámos eram excepcionais. Definitivamente voltaremos!"
+                            </p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--warning-color);">
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                </span>
+                                <span style="font-size: 0.875rem; color: var(--text-secondary);">Tour Douro Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experiência 2 -->
+                    <div class="card fade-in">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Casal em Aveiro" 
+                             style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius) var(--border-radius) 0 0;">
+                        <div class="card-content">
+                            <h3>Sophie & Pierre - França</h3>
+                            <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1rem;">
+                                "Aveiro é magnífica! Os barcos moliceiros, os ovos moles, a Costa Nova... 
+                                Tudo perfeitamente organizado. Merci beaucoup, Recreio Célebre!"
+                            </p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--warning-color);">
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                </span>
+                                <span style="font-size: 0.875rem; color: var(--text-secondary);">Tour Aveiro Completo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experiência 3 -->
+                    <div class="card fade-in">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Grupo de amigos no Porto" 
+                             style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--border-radius) var(--border-radius) 0 0;">
+                        <div class="card-content">
+                            <h3>Marco & Grupo - Alemanha</h3>
+                            <p style="color: var(--text-secondary); font-style: italic; margin-bottom: 1rem;">
+                                "Tour privado ao Porto foi perfeito! Vimos tudo: Ribeira, Clérigos, Lello, 
+                                caves do vinho... E o transfer do aeroporto foi impecável!"
+                            </p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <span style="color: var(--warning-color);">
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                    <span class="material-icons" style="font-size: 16px;">star</span>
+                                </span>
+                                <span style="font-size: 0.875rem; color: var(--text-secondary);">Tour Porto Privado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DESTINOS EM DESTAQUE ===== -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Destinos em Destaque</h2>
+                <p class="section-subtitle fade-in">
+                    Os locais mais procurados pelos nossos clientes
+                </p>
+                
+                <div class="grid grid-2">
+                    <!-- Destaque 1 -->
+                    <div class="card fade-in" style="overflow: hidden;">
+                        <div style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Vale do Douro" 
+                                 style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem;">
+                                <h3 style="color: white; margin-bottom: 0.5rem;">Vale do Douro</h3>
+                                <p style="margin: 0; opacity: 0.9;">Património Mundial da UNESCO</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                As famosas vinhas em socalcos, quintas centenárias e cruzeiros no rio. 
+                                Uma paisagem única que produz os melhores vinhos do Porto do mundo.
+                            </p>
+                            <a href="tours/douro-valley.html" class="btn btn-outline">Ver Tour Completo</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Destaque 2 -->
+                    <div class="card fade-in" style="overflow: hidden;">
+                        <div style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1591890243251-cef6b4bcc0e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Aveiro" 
+                                 style="width: 100%; height: 250px; object-fit: cover;">
+                            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem;">
+                                <h3 style="color: white; margin-bottom: 0.5rem;">Aveiro</h3>
+                                <p style="margin: 0; opacity: 0.9;">A Veneza Portuguesa</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Canais, moliceiros coloridos, ovos moles e a deslumbrante Costa Nova. 
+                                Uma cidade encantadora que combina tradição, natureza e gastronomia.
+                            </p>
+                            <a href="tours/" class="btn btn-outline">Ver Tours Disponíveis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CALL TO ACTION ===== -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container text-center">
+                <div class="fade-in">
+                    <h2 class="section-title">Crie as Suas Próprias Memórias</h2>
+                    <p class="section-subtitle">
+                        Venha descobrir estes lugares incríveis connosco.<br>
+                        Cada destino tem uma história para contar, cada tour é uma aventura única.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="tours/" class="btn btn-primary btn-lg">
+                            <span class="material-icons">map</span> Ver Todos os Tours
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary btn-lg">
+                            <span class="material-icons">phone</span> Planeie a Sua Viagem
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 3rem; padding: 2rem; background-color: var(--bg-primary); border-radius: var(--border-radius); border-left: 4px solid var(--secondary-color);">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1rem;">
+                            <span class="material-icons" style="vertical-align: middle;">camera_alt</span> Partilhe Connosco
+                        </h3>
+                        <p style="margin: 0; font-size: 1.1rem;">
+                            Visitou alguns destes locais connosco? Partilhe as suas fotos nas redes sociais 
+                            usando <strong style="color: var(--secondary-color);">#RecreioGelebreTransfers</strong> 
+                            e apareça na nossa galeria!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== LIGHTBOX MODAL ===== -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <button class="lightbox-prev">‹</button>
+            <button class="lightbox-next">›</button>
+        </div>
+    </div>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recreio Célebre Transfers</h3>
+                    <p>
+                        Descubra os destinos mais belos do Norte de Portugal com guias especializados. 
+                        Experiências autênticas e momentos inesquecíveis garantidos.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+                        <a href="#" aria-label="Instagram"><span class="material-icons">camera_alt</span></a>
+                        <a href="#" aria-label="TripAdvisor"><span class="material-icons">star</span></a>
+                        <a href="#" aria-label="Booking.com"><span class="material-icons">hotel</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tours/">Tours</a></li>
+                        <li><a href="transfers/">Transfers</a></li>
+                        <li><a href="fleet.html">Frota</a></li>
+                        <li><a href="portfolio.html">Galeria</a></li>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="contact.html">Contactos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">phone</span> +351 123 456 789</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">email</span> info@recreio-celebre-transfers.pt</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">location_on</span> Porto, Portugal</p>
+                    <p><strong>Atendimento:</strong> 24/7</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Idiomas</h3>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#" style="color: white; font-weight: bold;">Português</a>
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Español</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Recreio Célebre Transfers. Todos os direitos reservados.</p>
+                <p>
+                    <a href="#" style="color: inherit;">Política de Privacidade</a> | 
+                    <a href="#" style="color: inherit;">Termos de Serviço</a> | 
+                    <a href="#" style="color: inherit;">Política de Cookies</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/main.js"></script>
+    
+    <!-- JavaScript específico para galeria e lightbox -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // ===== SISTEMA DE FILTROS =====
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Atualizar botões ativos
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filtrar imagens
+                    galleryItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // ===== SISTEMA DE LIGHTBOX =====
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            const closeBtn = document.querySelector('.lightbox-close');
+            const prevBtn = document.querySelector('.lightbox-prev');
+            const nextBtn = document.querySelector('.lightbox-next');
+            
+            let currentImageIndex = 0;
+            let visibleImages = [];
+            
+            // Função para atualizar imagens visíveis
+            function updateVisibleImages() {
+                visibleImages = Array.from(galleryItems)
+                    .filter(item => item.style.display !== 'none')
+                    .map(item => item.querySelector('.gallery-image'));
+            }
+            
+            // Abrir lightbox
+            galleryItems.forEach((item, index) => {
+                const image = item.querySelector('.gallery-image');
+                image.addEventListener('click', function() {
+                    updateVisibleImages();
+                    currentImageIndex = visibleImages.indexOf(this);
+                    showImage(currentImageIndex);
+                    lightbox.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Função para mostrar imagem
+            function showImage(index) {
+                const image = visibleImages[index];
+                if (image) {
+                    lightboxImage.src = image.src;
+                    lightboxImage.alt = image.alt;
+                    lightboxTitle.textContent = image.getAttribute('data-title') || '';
+                    lightboxDescription.textContent = image.getAttribute('data-description') || '';
+                }
+            }
+            
+            // Fechar lightbox
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+            
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Navegação no lightbox
+            nextBtn.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+                showImage(currentImageIndex);
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+                showImage(currentImageIndex);
+            });
+            
+            // Teclas de atalho
+            document.addEventListener('keydown', function(e) {
+                if (lightbox.style.display === 'flex') {
+                    switch(e.key) {
+                        case 'Escape':
+                            closeLightbox();
+                            break;
+                        case 'ArrowRight':
+                            nextBtn.click();
+                            break;
+                        case 'ArrowLeft':
+                            prevBtn.click();
+                            break;
+                    }
+                }
+            });
+            
+            // Inicializar imagens visíveis
+            updateVisibleImages();
+        });
+    </script>
+    
+    <!-- CSS adicional para galeria e lightbox -->
+    <style>
+        /* Galeria Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-info h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        
+        .gallery-info p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 0.875rem;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 2rem;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1001;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+        
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        #lightbox-image {
+            max-width: 100%;
+            max-height: calc(90vh - 120px);
+            object-fit: contain;
+            border-radius: var(--border-radius);
+        }
+        
+        .lightbox-info {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        .lightbox-info h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--secondary-color);
+        }
+        
+        .lightbox-info p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lightbox-prev {
+            left: 20px;
+        }
+        
+        .lightbox-next {
+            right: 20px;
+        }
+        
+        .lightbox-prev:hover,
+        .lightbox-next:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+            
+            .lightbox {
+                padding: 1rem;
+            }
+            
+            .lightbox-prev,
+            .lightbox-next {
+                width: 40px;
+                height: 40px;
+                font-size: 1.5rem;
+            }
+            
+            .lightbox-prev {
+                left: 10px;
+            }
+            
+            .lightbox-next {
+                right: 10px;
+            }
+        }
+    </style>
+</body>
+</html>

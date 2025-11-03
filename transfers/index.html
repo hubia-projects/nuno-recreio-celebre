@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transfers privados no Porto e Norte de Portugal. Aeroporto, intercidades, transfers de luxo com pontualidade garantida.">
+    <meta name="keywords" content="transfers porto, aeroporto transfer, transfers privados, transporte porto">
+    
+    <title>Transfers | Recreio Célebre Transfers - Transporte de Qualidade</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232c3e50'><path d='M18 16h2v-3c0-1.1-.9-2-2-2h-6.5l1.5-3H18v2l3-3-3-3v2h-6c-.8 0-1.5.4-1.9 1.1L8.1 10H5c-1.1 0-2 .9-2 2v4h2c0 1.1.9 2 2 2s2-.9 2-2h8c0 1.1.9 2 2 2s2-.9 2-2zM7 16c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm12 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z'/></svg>">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="../" class="logo" aria-label="Recreio Célebre Transfers - Página inicial">
+                    Recreio Célebre
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../tours/">Tours</a></li>
+                    <li><a href="./" class="active">Transfers</a></li>
+                    <li><a href="../portfolio.html">Galeria</a></li>
+                    <li><a href="../about.html">Sobre</a></li>
+                    <li><a href="../contact.html">Contactos</a></li>
+                </ul>
+                
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <button class="language-btn" aria-label="Selecionar idioma">
+                            <i class="bi bi-globe"></i> PT
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="pt">Português</a>
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="fr">Français</a>
+                            <a href="#" data-lang="es">Español</a>
+                        </div>
+                    </div>
+                    
+                    <button class="theme-toggle" aria-label="Alterar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    
+                    <button class="hamburger" aria-label="Menu de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main style="margin-top: 80px;">
+        
+        <!-- ===== HERO DA PÁGINA DE TRANSFERS ===== -->
+        <section class="hero" style="height: 60vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Tranfer/transfer-01.jpg');">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Transfers Privados</h1>
+                <p class="hero-subtitle">
+                    Transporte seguro e confortável para qualquer destino<br>
+                    Pontualidade garantida • Monitorização de voos • Serviço 24/7
+                </p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-accent btn-lg">
+                        Reservar Transfer
+                    </a>
+                    <a href="#frota" class="btn btn-secondary btn-lg">
+                        Ver Frota
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TIPOS DE TRANSFER ===== -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Tipos de Transfer</h2>
+                <p class="section-subtitle fade-in">
+                    Soluções de transporte adaptadas às suas necessidades, 
+                    sempre com a máxima qualidade e pontualidade.
+                </p>
+                
+                <div class="grid grid-3">
+                    <!-- Transfer Aeroporto -->
+                    <article class="card fade-in">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Transfer Aeroporto - Veículo no aeroporto" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Transfer Aeroporto</h3>
+                            <p class="card-text">
+                                Transfers de/para Aeroporto do Porto com monitorização de voos em tempo real. 
+                                Motorista aguarda até 1h após aterragem sem custo adicional.
+                            </p>
+                            <div style="margin: 1rem 0;">
+                                <span class="badge">Mais Popular</span>
+                                <span class="badge" style="background-color: var(--success-color);">24/7</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">flight</span> Aeroporto ⇄ Porto Centro
+                                </div>
+                                <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">
+                                    desde 35€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="aeroporto-porto.html" class="btn btn-primary" style="width: 100%;">
+                                Ver Detalhes
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Transfer Intercidades -->
+                    <article class="card fade-in">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Transfer Intercidades - Estrada entre cidades" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Transfer Intercidades</h3>
+                            <p class="card-text">
+                                Ligações diretas entre Porto, Lisboa, Braga, Coimbra e outras cidades. 
+                                Viagens confortáveis com paragens para descanso.
+                            </p>
+                            <div style="margin: 1rem 0;">
+                                <span class="badge" style="background-color: var(--secondary-color);">Longa Distância</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                                    <span class="material-icons" style="font-size: 1rem; vertical-align: middle; margin-right: 0.5rem;">directions_car</span>Porto ⇄ Lisboa
+                                </div>
+                                <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">
+                                    desde 180€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary" style="width: 100%;">
+                                Ver Rotas
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Transfer Executivo -->
+                    <article class="card fade-in">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Transfer Executivo - Sedan de luxo" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Transfer Executivo</h3>
+                            <p class="card-text">
+                                Serviço premium com veículos de luxo para reuniões de negócios, 
+                                eventos especiais ou ocasiões que exigem máximo conforto.
+                            </p>
+                            <div style="margin: 1rem 0;">
+                                <span class="badge" style="background-color: var(--warning-color);">Premium</span>
+                                <span class="badge" style="background-color: var(--accent-color);">Luxo</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                                    <span class="material-icons" style="font-size: 1rem; vertical-align: middle; margin-right: 0.5rem;">business</span>Serviço Empresarial
+                                </div>
+                                <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">
+                                    desde 60€
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary" style="width: 100%;">
+                                Contactar
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ROTAS POPULARES ===== -->
+        <section id="routes" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title fade-in">Rotas Mais Populares</h2>
+                <p class="section-subtitle fade-in">
+                    Preços fixos e transparentes para as rotas mais procuradas
+                </p>
+                
+                <div class="grid grid-2">
+                    
+                    <!-- Rota 1: Aeroporto - Porto -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 class="card-title" style="margin: 0;">Aeroporto ⇄ Porto Centro</h3>
+                                <span class="badge badge-success">Mais Popular</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Distância: 11 km</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Duração: ~20 min</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">35€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Sedan (3 pax)</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">55€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Van (7 pax)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="aeroporto-porto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                <a href="#booking" class="btn btn-accent btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rota 2: Porto - Braga -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 class="card-title" style="margin: 0;">Porto ⇄ Braga</h3>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Distância: 53 km</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Duração: ~45 min</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">65€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Sedan (3 pax)</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">90€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Van (7 pax)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                <a href="#booking" class="btn btn-accent btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rota 3: Porto - Aveiro -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 class="card-title" style="margin: 0;">Porto ⇄ Aveiro</h3>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Distância: 75 km</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Duração: ~1h</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">80€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Sedan (3 pax)</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">110€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Van (7 pax)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                <a href="#booking" class="btn btn-accent btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rota 4: Porto - Lisboa -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 class="card-title" style="margin: 0;">Porto ⇄ Lisboa</h3>
+                                <span class="badge" style="background-color: var(--secondary-color);">Longa Distância</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Distância: 313 km</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Duração: ~3h</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">180€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Sedan (3 pax)</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">250€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Van (7 pax)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                <a href="#booking" class="btn btn-accent btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rota 5: Porto - Coimbra -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 class="card-title" style="margin: 0;">Porto ⇄ Coimbra</h3>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Distância: 116 km</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Duração: ~1h15</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">120€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Sedan (3 pax)</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">160€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Van (7 pax)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                <a href="#booking" class="btn btn-accent btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rota 6: Santiago de Compostela -->
+                    <div class="card fade-in">
+                        <div class="card-content">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                <h3 class="card-title" style="margin: 0;">Porto ⇄ Santiago Compostela</h3>
+                                <span class="badge" style="background-color: var(--warning-color);">Internacional</span>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Distância: 240 km</div>
+                                    <div style="color: var(--text-secondary); font-size: 0.875rem;">Duração: ~2h30</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">200€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Sedan (3 pax)</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">280€</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Van (7 pax)</div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <a href="#" class="btn btn-primary btn-sm">Ver Detalhes</a>
+                                <a href="#booking" class="btn btn-accent btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Nota sobre outras rotas -->
+                <div class="text-center mt-4 fade-in">
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Não encontra a sua rota? Fazemos transfers para qualquer destino!
+                    </p>
+                    <a href="../contact.html" class="btn btn-secondary">
+                        Solicitar Orçamento Personalizado
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== A NOSSA FROTA ===== -->
+        <section id="frota" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">A Nossa Frota</h2>
+                <p class="section-subtitle fade-in">
+                    Veículo moderno e confortável para atender a todas as suas necessidades
+                </p>
+                
+                <!-- Sedan Executivo - Único veículo -->
+                <div class="card fade-in" style="max-width: 800px; margin: 0 auto;">
+                    <div class="grid grid-2" style="align-items: center;">
+                        <div class="vehicle-image">
+                            <img src="../images/Tranfer/transfer-01.jpg" 
+                                 alt="Sedan Executivo - Mercedes classe E" 
+                                 style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="vehicle-details" style="padding: 2rem;">
+                            <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Sedan Executivo</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                                Veículo premium com máximo conforto e elegância para suas viagens de negócios ou lazer.
+                            </p>
+                            
+                            <div class="vehicle-specs" style="margin-bottom: 2rem;">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <div class="spec-item">
+                                        <div style="font-weight: 600; color: var(--primary-color);">
+                                            <span class="material-icons" style="vertical-align: middle;">airline_seat_recline_normal</span> Passageiros
+                                        </div>
+                                        <div style="color: var(--text-secondary);">Até 3 pessoas</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div style="font-weight: 600; color: var(--primary-color);"><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">luggage</span> Bagagem</div>
+                                        <div style="color: var(--text-secondary);">2 malas grandes + 2 de mão</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div style="font-weight: 600; color: var(--primary-color);">
+                                            <span class="material-icons" style="vertical-align: middle;">ac_unit</span> Conforto
+                                        </div>
+                                        <div style="color: var(--text-secondary);">Ar condicionado</div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div style="font-weight: 600; color: var(--primary-color);"><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">wifi</span> Conectividade</div>
+                                        <div style="color: var(--text-secondary);">Wi-Fi gratuito</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="vehicle-features" style="margin-bottom: 2rem;">
+                                <h4 style="margin-bottom: 1rem;">Características Premium:</h4>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 0.5rem;">✓ Bancos em pele premium</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Sistema de som de alta qualidade</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Garrafas de água cortesia</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Carregadores USB</li>
+                                    <li style="margin-bottom: 0.5rem;">✓ Compartimento refrigerado</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="#booking" class="btn btn-primary btn-lg">
+                                Reservar Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Informação adicional sobre o veículo -->
+                <div class="text-center mt-4 fade-in">
+                    <div class="card" style="background-color: var(--bg-secondary); padding: 2rem; max-width: 600px; margin: 0 auto;">
+                        <h4 style="margin-bottom: 1rem; color: var(--primary-color);">Garantia de Qualidade</h4>
+                        <p style="color: var(--text-secondary);">
+                            O nosso veículo passa por manutenção regular e limpeza profissional após cada serviço. 
+                            Motorista profissional com mais de 10 anos de experiência e conhecimento profundo da região Norte de Portugal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== VANTAGENS DOS NOSSOS TRANSFERS ===== -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title fade-in">Porquê Escolher os Nossos Transfers?</h2>
+                <div class="grid grid-4">
+                    
+                    <!-- Vantagem 1 -->
+                    <div class="card text-center fade-in">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">
+                                <span class="material-icons" style="font-size: 3rem;">flight_takeoff</span>
+                            </div>
+                            <h3 class="card-title">Monitorização de Voos</h3>
+                            <p class="card-text">
+                                Sistema automático de tracking para transfers de aeroporto. 
+                                Ajustamos o horário conforme atrasos ou antecipações.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Vantagem 2 -->
+                    <div class="card text-center fade-in">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">
+                                <span class="material-icons" style="font-size: 3rem;">schedule</span>
+                            </div>
+                            <h3 class="card-title">Pontualidade Garantida</h3>
+                            <p class="card-text">
+                                Chegamos sempre 15 minutos antes do horário combinado. 
+                                Espera gratuita de até 1 hora em transfers de aeroporto.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Vantagem 3 -->
+                    <div class="card text-center fade-in">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">
+                                <span class="material-icons" style="font-size: 3rem;">security</span>
+                            </div>
+                            <h3 class="card-title">Segurança Total</h3>
+                            <p class="card-text">
+                                Todos os veículos com licenças TVDE, seguros completos 
+                                e motoristas com formação profissional certificada.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Vantagem 4 -->
+                    <div class="card text-center fade-in">
+                        <div class="card-content">
+                            <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">
+                                <span class="material-icons" style="font-size: 3rem;">monetization_on</span>
+                            </div>
+                            <h3 class="card-title">Preços Fixos</h3>
+                            <p class="card-text">
+                                Sem surpresas! Preços fixos acordados antecipadamente, 
+                                sem taxímetro, sem suplementos de tráfego ou bagagem.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FORMULÁRIO DE RESERVA ===== -->
+        <section id="booking" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title fade-in">Reserve o Seu Transfer</h2>
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <form class="card fade-in" data-form-type="transfer">
+                        <div class="card-content">
+                            
+                            <!-- Tipo de transfer -->
+                            <div class="form-group">
+                                <label for="transfer-type" class="form-label">Tipo de Transfer *</label>
+                                <select id="transfer-type" name="type" class="form-control" required>
+                                    <option value="">Selecione o tipo...</option>
+                                    <option value="airport">Transfer Aeroporto</option>
+                                    <option value="intercity">Transfer Intercidades</option>
+                                    <option value="executive">Transfer Executivo</option>
+                                    <option value="custom">Transfer Personalizado</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Origem e Destino -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickup-location" class="form-label">Local de Partida *</label>
+                                    <input type="text" id="pickup-location" name="pickup" class="form-control" 
+                                           placeholder="Hotel, morada ou aeroporto..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="destination" class="form-label">Destino *</label>
+                                    <input type="text" id="destination" name="destination" class="form-control" 
+                                           placeholder="Local de chegada..." required>
+                                </div>
+                            </div>
+                            
+                            <!-- Data e Hora -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="transfer-date" class="form-label">Data *</label>
+                                    <input type="date" id="transfer-date" name="date" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="transfer-time" class="form-label">Hora *</label>
+                                    <input type="time" id="transfer-time" name="time" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Passageiros e Bagagem -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="passengers" class="form-label">Passageiros *</label>
+                                    <select id="passengers" name="passengers" class="form-control" required>
+                                        <option value="">Quantos passageiros?</option>
+                                        <option value="1">1 pessoa</option>
+                                        <option value="2">2 pessoas</option>
+                                        <option value="3">3 pessoas</option>
+                                        <option value="4">4 pessoas</option>
+                                        <option value="5">5 pessoas</option>
+                                        <option value="6">6 pessoas</option>
+                                        <option value="7">7 pessoas</option>
+                                        <option value="8+">8+ pessoas</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="luggage" class="form-label">Bagagem</label>
+                                    <select id="luggage" name="luggage" class="form-control">
+                                        <option value="light">Bagagem de mão apenas</option>
+                                        <option value="medium">1-2 malas grandes</option>
+                                        <option value="heavy">3+ malas grandes</option>
+                                        <option value="special">Bagagem especial (explicar abaixo)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Transfer de volta -->
+                            <div class="form-group">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                    <input type="checkbox" id="return-transfer" name="return" value="yes">
+                                    <span>Preciso também de transfer de volta</span>
+                                </label>
+                            </div>
+                            
+                            <!-- Dados de volta (hidden por defeito) -->
+                            <div id="return-details" style="display: none; margin-top: 1rem; padding: 1rem; background-color: var(--bg-primary); border-radius: var(--border-radius);">
+                                <h4 style="margin-bottom: 1rem;">Detalhes do Transfer de Volta</h4>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="return-date" class="form-label">Data de Volta</label>
+                                        <input type="date" id="return-date" name="return_date" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="return-time" class="form-label">Hora de Volta</label>
+                                        <input type="time" id="return-time" name="return_time" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Dados do cliente -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-name" class="form-label">Nome Completo *</label>
+                                    <input type="text" id="client-name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phone" class="form-label">Telefone *</label>
+                                    <input type="tel" id="client-phone" name="phone" class="form-control" 
+                                           placeholder="+351 xxx xxx xxx" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="client-email" class="form-label">Email *</label>
+                                <input type="email" id="client-email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <!-- Informações especiais -->
+                            <div class="form-group">
+                                <label for="special-info" class="form-label">Informações Adicionais</label>
+                                <textarea id="special-info" name="special_info" class="form-control" 
+                                          placeholder="Número do voo, necessidades especiais, pedidos específicos..."></textarea>
+                            </div>
+                            
+                            <!-- Preço estimado -->
+                            <div style="margin: 1.5rem 0; padding: 1rem; background-color: var(--bg-primary); border-radius: var(--border-radius);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-weight: 600;">Preço Estimado:</span>
+                                    <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">
+                                        A calcular...
+                                    </span>
+                                </div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                    Preço final confirmado por email • Pagamento no dia
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;">
+                                Solicitar Reserva de Transfer
+                            </button>
+                            
+                            <div style="text-align: center; margin-top: 1rem;">
+                                <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                                    Resposta garantida em menos de 2 horas
+                                </p>
+                                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                    <a href="#" class="whatsapp-btn btn btn-sm" 
+                                       data-phone="351123456789" 
+                                       data-message="Olá! Gostaria de reservar um transfer.">
+                                        <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> WhatsApp
+                                    </a>
+                                    <a href="tel:+351123456789" class="btn btn-sm"><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> Ligar Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recreio Célebre Transfers</h3>
+                    <p>
+                        Mais de uma década oferecendo experiências únicas no Norte de Portugal. 
+                        Transfers seguros e tours inesquecíveis com qualidade garantida.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+                        <a href="#" aria-label="Instagram"><span class="material-icons">camera_alt</span></a>
+                        <a href="#" aria-label="TripAdvisor"><span class="material-icons">rate_review</span></a>
+                        <a href="#" aria-label="Booking.com"><span class="material-icons">hotel</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../tours/">Tours</a></li>
+                        <li><a href="./">Transfers</a></li>
+                        <li><a href="../fleet.html">Frota</a></li>
+                        <li><a href="../portfolio.html">Galeria</a></li>
+                        <li><a href="../about.html">Sobre Nós</a></li>
+                        <li><a href="../contact.html">Contactos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> +351 123 456 789</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">email</span> info@recreio-celebre-transfers.pt</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">location_on</span> Porto, Portugal</p>
+                    <p><strong>Atendimento:</strong> 24/7</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Idiomas</h3>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#" style="color: white; font-weight: bold;">Português</a>
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Español</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Recreio Célebre Transfers. Todos os direitos reservados.</p>
+                <p>
+                    <a href="#" style="color: inherit;">Política de Privacidade</a> | 
+                    <a href="#" style="color: inherit;">Termos de Serviço</a> | 
+                    <a href="#" style="color: inherit;">Política de Cookies</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="../js/main.js"></script>
+    
+    <!-- ===== JAVASCRIPT ESPECÍFICO PARA TRANSFERS ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle dos detalhes de volta
+            const returnCheckbox = document.getElementById('return-transfer');
+            const returnDetails = document.getElementById('return-details');
+            
+            if (returnCheckbox && returnDetails) {
+                returnCheckbox.addEventListener('change', function() {
+                    returnDetails.style.display = this.checked ? 'block' : 'none';
+                });
+            }
+            
+            // Cálculo automático de preço (simulado)
+            const pickupInput = document.getElementById('pickup-location');
+            const destinationInput = document.getElementById('destination');
+            const passengersSelect = document.getElementById('passengers');
+            
+            function calculatePrice() {
+                const pickup = pickupInput?.value.toLowerCase() || '';
+                const destination = destinationInput?.value.toLowerCase() || '';
+                const passengers = parseInt(passengersSelect?.value) || 0;
+                
+                let basePrice = 0;
+                
+                // Preços baseados em rotas conhecidas
+                if ((pickup.includes('aeroporto') || pickup.includes('opo')) && 
+                    (destination.includes('porto') || destination.includes('centro'))) {
+                    basePrice = passengers <= 3 ? 35 : 55;
+                } else if ((pickup.includes('porto') && destination.includes('braga')) ||
+                          (pickup.includes('braga') && destination.includes('porto'))) {
+                    basePrice = passengers <= 3 ? 65 : 90;
+                } else if ((pickup.includes('porto') && destination.includes('aveiro')) ||
+                          (pickup.includes('aveiro') && destination.includes('porto'))) {
+                    basePrice = passengers <= 3 ? 80 : 110;
+                } else if ((pickup.includes('porto') && destination.includes('lisboa')) ||
+                          (pickup.includes('lisboa') && destination.includes('porto'))) {
+                    basePrice = passengers <= 3 ? 180 : 250;
+                } else {
+                    // Preço genérico baseado na distância estimada
+                    basePrice = passengers <= 3 ? 50 : 75;
+                }
+                
+                // Mostrar preço estimado
+                const priceElement = document.querySelector('[style*="A calcular"]');
+                if (priceElement && basePrice > 0) {
+                    priceElement.textContent = `desde ${basePrice}€`;
+                }
+            }
+            
+            // Event listeners para cálculo automático
+            [pickupInput, destinationInput, passengersSelect].forEach(element => {
+                if (element) {
+                    element.addEventListener('input', calculatePrice);
+                    element.addEventListener('change', calculatePrice);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

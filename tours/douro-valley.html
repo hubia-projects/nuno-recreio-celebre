@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vale do Douro Tour - Explore a região vinícola mais antiga do mundo. Quintas, provas de vinho, cruzeiro no rio e paisagens UNESCO.">
+    <meta name="keywords" content="vale douro tour, vinhos porto, quintas douro, cruzeiro douro, tours portugal">
+    
+    <title>Vale do Douro Tour | Recreio Célebre Transfers</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232c3e50'><path d='M18 16h2v-3c0-1.1-.9-2-2-2h-6.5l1.5-3H18v2l3-3-3-3v2h-6c-.8 0-1.5.4-1.9 1.1L8.1 10H5c-1.1 0-2 .9-2 2v4h2c0 1.1.9 2 2 2s2-.9 2-2h8c0 1.1.9 2 2 2s2-.9 2-2zM7 16c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm12 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z'/></svg>">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="../" class="logo" aria-label="Recreio Célebre Transfers - Página inicial">
+                    Recreio Célebre
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="./" class="active">Tours</a></li>
+                    <li><a href="../transfers/">Transfers</a></li>
+                    <li><a href="../fleet.html">Frota</a></li>
+                    <li><a href="../portfolio.html">Galeria</a></li>
+                    <li><a href="../about.html">Sobre</a></li>
+                    <li><a href="../contact.html">Contactos</a></li>
+                </ul>
+                
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <button class="language-btn" aria-label="Selecionar idioma">
+                            <i class="bi bi-globe"></i> PT
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" data-lang="pt">Português</a>
+                            <a href="#" data-lang="en">English</a>
+                            <a href="#" data-lang="fr">Français</a>
+                            <a href="#" data-lang="es">Español</a>
+                        </div>
+                    </div>
+                    
+                    <button class="theme-toggle" aria-label="Alterar tema">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    
+                    <button class="hamburger" aria-label="Menu de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main style="margin-top: 80px;">
+        
+        <!-- ===== HERO DO TOUR ===== -->
+        <section class="hero" style="height: 70vh; min-height: 500px; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1571994829887-34f0d55b91f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-content fade-in">
+                <div class="badge badge-success" style="margin-bottom: 1rem;">Best-Seller</div>
+                <h1 class="hero-title">Vale do Douro Tour Completo</h1>
+                <p class="hero-subtitle">
+                    Região Demarcada Mais Antiga do Mundo • Património Mundial UNESCO<br>
+                    Quintas Históricas • Provas de Vinho • Cruzeiro no Rio
+                </p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-accent btn-lg">
+                        Reservar Agora - desde 95€
+                    </a>
+                    <a href="#itinerary" class="btn btn-secondary btn-lg">
+                        Ver Itinerário
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NAVEGAÇÃO INTERNA (TABS) ===== -->
+        <section class="section py-2" style="background-color: var(--bg-secondary); position: sticky; top: 80px; z-index: 100;">
+            <div class="container">
+                <div class="tabs-container">
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <button class="tab-btn btn btn-secondary active" data-target="highlights">
+                            <span class="material-icons">star</span> Destaques
+                        </button>
+                        <button class="tab-btn btn btn-secondary" data-target="itinerary">
+                            <span class="material-icons">list</span> Itinerário
+                        </button>
+                        <button class="tab-btn btn btn-secondary" data-target="included">
+                            <span class="material-icons">check_circle</span> Incluído/Excluído
+                        </button>
+                        <button class="tab-btn btn btn-secondary" data-target="prices">
+                            <span class="material-icons">euro_symbol</span> Preços
+                        </button>
+                        <button class="tab-btn btn btn-secondary" data-target="faq">
+                            <span class="material-icons">help</span> FAQ
+                        </button>
+                        <button class="tab-btn btn btn-secondary" data-target="reviews">
+                            <span class="material-icons">rate_review</span> Avaliações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTEÚDO DAS TABS ===== -->
+        <section class="section">
+            <div class="container">
+                
+                <!-- TAB: DESTAQUES -->
+                <div id="highlights" class="tab-content active fade-in">
+                    <h2 class="section-title">Destaques do Tour</h2>
+                    <div class="grid grid-2" style="align-items: start;">
+                        <div>
+                            <h3 style="margin-bottom: 1.5rem;">O que Torna Este Tour Especial</h3>
+                            <div style="display: grid; gap: 1.5rem;">
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <span class="material-icons" style="font-size: 2rem; color: var(--accent-color);">wine_bar</span>
+                                    <div>
+                                        <h4>Provas Autênticas de Vinho do Porto</h4>
+                                        <p>Degustação em duas quintas centenárias com explicação detalhada dos processos de produção e história familiar.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <span class="material-icons" style="font-size: 2rem; color: var(--secondary-color);">sailing</span>
+                                    <div>
+                                        <h4>Cruzeiro Panorâmico no Rio Douro</h4>
+                                        <p>1 hora de navegação relaxante com vistas únicas dos terraços vinícolas e paisagens classificadas pela UNESCO.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <span style="font-size: 2rem;">🥘</span>
+                                    <div>
+                                        <h4>Almoço Tradicional Português</h4>
+                                        <p>Refeição completa num restaurante típico em Pinhão, com especialidades regionais e vista para o rio.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <span class="material-icons" style="font-size: 2rem; color: var(--success-color);">camera_alt</span>
+                                    <div>
+                                        <h4>Miradouros Exclusivos</h4>
+                                        <p>Paragens nos melhores pontos fotográficos, incluindo locais menos conhecidos longe das multidões.</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <span class="material-icons" style="font-size: 2rem;">school</span>
+                                    <div>
+                                        <h4>Guia Especializado Local</h4>
+                                        <p>Conhecimento profundo da região, histórias autênticas e dicas exclusivas que só os locais conhecem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Terraços de vinhas no Vale do Douro" 
+                                 style="width: 100%; border-radius: var(--border-radius); margin-bottom: 1rem;">
+                            
+                            <div class="card">
+                                <div class="card-content">
+                                    <h4>Informações Essenciais</h4>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span class="material-icons" style="font-size: 18px;">schedule</span> <strong>Duração:</strong> 9-10 horas (dia completo)
+                                        </li>
+                                        <li style="margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span class="material-icons" style="font-size: 18px;">group</span> <strong>Grupo:</strong> Máximo 8 pessoas (tour privado)
+                                        </li>
+                                        <li style="margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span class="material-icons" style="font-size: 18px;">language</span> <strong>Idiomas:</strong> Português, Inglês, Francês
+                                        </li>
+                                        <li style="margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span class="material-icons" style="font-size: 18px;">directions_car</span> <strong>Pickup:</strong> Hotel/local à escolha no Porto
+                                        </li>
+                                        <li style="margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span class="material-icons" style="font-size: 18px;">event</span> <strong>Disponível:</strong> Todo o ano
+                                        </li>
+                                        <li style="margin: 0.5rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span class="material-icons" style="font-size: 18px;">accessibility</span> <strong>Dificuldade:</strong> Fácil (acessível a todos)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB: ITINERÁRIO -->
+                <div id="itinerary" class="tab-content fade-in" style="display: none;">
+                    <h2 class="section-title">Itinerário Detalhado</h2>
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">08:30 - Partida do Porto</h3>
+                                <p>Pickup no hotel ou local à escolha. Viagem confortável de aproximadamente 1h30 até ao Vale do Douro, com paragens para fotos e explicações sobre a região.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">10:00 - Primeira Quinta Vinícola</h3>
+                                <p>Visita à Quinta da Pacheca ou similar. Tour pelas vinhas e caves, explicação do processo de produção do Vinho do Porto, seguido de prova comentada de 3 vinhos diferentes.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 1h30
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">11:45 - Miradouro de São Leonardo da Galafura</h3>
+                                <p>Paragem no miradouro com uma das vistas mais espetaculares do Douro. Tempo para fotografias e apreciação da paisagem classificada como Património Mundial.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 30 minutos
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">13:00 - Almoço em Pinhão</h3>
+                                <p>Almoço tradicional português no Restaurante Veladouro ou similar, com vista para o rio Douro. Menu inclui entrada, prato principal, sobremesa e bebidas.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 1h30
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">14:45 - Cruzeiro no Rio Douro</h3>
+                                <p>Embarque em Pinhão para cruzeiro panorâmico de 1 hora. Apreciação das paisagens ripárias, terraços de vinhas e quintas históricas desde o rio.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 1 hora
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">16:00 - Segunda Quinta Vinícola</h3>
+                                <p>Visita à Quinta do Bomfim (Dow's) ou similar. Tour pelas instalações históricas, caves centenárias e prova de vinhos premium com petiscos regionais.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 1h15
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">17:30 - Peso da Régua</h3>
+                                <p>Breve paragem na capital do Douro Vinhateiro. Visita ao Museu do Douro (opcional) ou tempo livre para compras de vinhos e produtos locais.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 30 minutos
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 style="color: var(--secondary-color);">18:00 - Regresso ao Porto</h3>
+                                <p>Viagem de regresso ao Porto com chegada prevista às 19:30. Drop-off no hotel ou local à escolha. Tempo para relaxar e apreciar as memórias do dia.</p>
+                                <div style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
+                                    <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">schedule</span> Duração: 1h30
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TAB: INCLUÍDO/EXCLUÍDO -->
+                <div id="included" class="tab-content fade-in" style="display: none;">
+                    <h2 class="section-title">O que Está Incluído</h2>
+                    <div class="grid grid-2">
+                        
+                        <!-- Incluído -->
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 style="color: var(--success-color); margin-bottom: 1.5rem;">
+                                    <span class="material-icons" style="vertical-align: middle;">check_circle</span> Incluído no Preço
+                                </h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-icons" style="color: var(--success-color); font-size: 18px;">check</span>
+                                        <span>Transporte privado ida e volta</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-icons" style="color: var(--success-color); font-size: 18px;">check</span>
+                                        <span>Guia especializado em português/inglês</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-icons" style="color: var(--success-color); font-size: 18px;">check</span>
+                                        <span>Visita a 2 quintas com provas de vinho</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success-color);">✓</span>
+                                        <span>Cruzeiro panorâmico no rio Douro (1h)</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success-color);">✓</span>
+                                        <span>Almoço completo em restaurante típico</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success-color);">✓</span>
+                                        <span>Seguros de responsabilidade civil</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success-color);">✓</span>
+                                        <span>Água engarrafada durante o tour</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success-color);">✓</span>
+                                        <span>WiFi no veículo</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success-color);">✓</span>
+                                        <span>Pickup e drop-off no hotel</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Não Incluído -->
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">❌ Não Incluído</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--accent-color);">✗</span>
+                                        <span>Despesas pessoais</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--accent-color);">✗</span>
+                                        <span>Gorjetas (opcional)</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--accent-color);">✗</span>
+                                        <span>Compra de vinhos nas quintas</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--accent-color);">✗</span>
+                                        <span>Entrada no Museu do Douro (3€)</span>
+                                    </li>
+                                    <li style="margin: 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--accent-color);">✗</span>
+                                        <span>Bebidas alcoólicas extra no almoço</span>
+                                    </li>
+                                </ul>
+                                
+                                <div style="margin-top: 2rem; padding: 1rem; background-color: var(--bg-secondary); border-radius: var(--border-radius);">
+                                    <h4 style="margin-bottom: 0.5rem;">
+                                        <span class="material-icons" style="vertical-align: middle; color: var(--warning-color);">lightbulb</span> Dicas Importantes
+                                    </h4>
+                                    <ul style="font-size: 0.875rem; margin: 0; padding-left: 1rem;">
+                                        <li>Recomendamos roupa confortável e calçado adequado para caminhar</li>
+                                        <li>Traga protetor solar e chapéu no verão</li>
+                                        <li>As quintas podem variar conforme disponibilidade</li>
+                                        <li>O cruzeiro pode ser cancelado por condições meteorológicas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TAB: PREÇOS -->
+                <div id="prices" class="tab-content fade-in" style="display: none;">
+                    <h2 class="section-title">Preços e Opções</h2>
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        
+                        <!-- Preços por grupo (privado) -->
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <div class="card-content">
+                                <h3 style="margin-bottom: 1.5rem;">🚗 Tour Privado (Recomendado)</h3>
+                                <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
+                                    Preços por veículo completo - até ao número máximo de passageiros indicado
+                                </p>
+                                
+                                <div class="grid grid-2" style="gap: 1.5rem;">
+                                    <div style="text-align: center; padding: 1.5rem; background-color: var(--bg-secondary); border-radius: var(--border-radius);">
+                                        <h4>Sedan/SUV</h4>
+                                        <div style="font-size: 0.875rem; color: var(--text-secondary); margin: 0.5rem 0;">
+                                            Até 3 passageiros
+                                        </div>
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">
+                                            285€
+                                        </div>
+                                        <div style="font-size: 0.875rem; color: var(--text-secondary);">
+                                            95€ por pessoa (3 pax)
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="text-align: center; padding: 1.5rem; background-color: var(--bg-secondary); border-radius: var(--border-radius);">
+                                        <h4>Van de Luxo</h4>
+                                        <div style="font-size: 0.875rem; color: var(--text-secondary); margin: 0.5rem 0;">
+                                            Até 7 passageiros
+                                        </div>
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color);">
+                                            490€
+                                        </div>
+                                        <div style="font-size: 0.875rem; color: var(--text-secondary);">
+                                            70€ por pessoa (7 pax)
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(39, 174, 96, 0.1); border-radius: var(--border-radius);">
+                                    <strong style="color: var(--success-color);">
+                                        <span class="material-icons" style="vertical-align: middle;">star</span> Vantagens do Tour Privado:
+                                    </strong>
+                                    <ul style="margin: 0.5rem 0; padding-left: 1rem; font-size: 0.875rem;">
+                                        <li>Horário flexível de partida</li>
+                                        <li>Paragens extra a pedido</li>
+                                        <li>Atenção personalizada do guia</li>
+                                        <li>Ritmo adequado ao seu grupo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Variações sazonais -->
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <div class="card-content">
+                                <h3 style="margin-bottom: 1.5rem;">📅 Variações Sazonais</h3>
+                                <div class="grid grid-3">
+                                    <div style="text-align: center;">
+                                        <h4 style="color: var(--secondary-color);">Época Baixa</h4>
+                                        <div style="font-size: 0.875rem; margin: 0.5rem 0;">Nov - Fev</div>
+                                        <div style="font-weight: 600;">Preço Base</div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <h4 style="color: var(--warning-color);">Época Média</h4>
+                                        <div style="font-size: 0.875rem; margin: 0.5rem 0;">Mar - Mai, Set - Out</div>
+                                        <div style="font-weight: 600;">+10%</div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <h4 style="color: var(--accent-color);">Época Alta</h4>
+                                        <div style="font-size: 0.875rem; margin: 0.5rem 0;">Jun - Ago</div>
+                                        <div style="font-weight: 600;">+20%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Política de cancelamento -->
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 style="margin-bottom: 1.5rem;">📋 Política de Cancelamento</h3>
+                                <ul style="line-height: 1.8;">
+                                    <li><strong>Até 48h antes:</strong> Cancelamento gratuito</li>
+                                    <li><strong>24-48h antes:</strong> 50% do valor</li>
+                                    <li><strong>Menos de 24h:</strong> 100% do valor</li>
+                                    <li><strong>Condições meteorológicas:</strong> Remarcação gratuita</li>
+                                </ul>
+                                
+                                <div style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(52, 152, 219, 0.1); border-radius: var(--border-radius);">
+                                    <strong style="color: var(--secondary-color);">💳 Formas de Pagamento:</strong>
+                                    <p style="margin: 0.5rem 0; font-size: 0.875rem;">
+                                        Dinheiro, Multibanco, Transferência bancária ou PayPal. 
+                                        Sinal de 30% na reserva, restante no dia do tour.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TAB: FAQ -->
+                <div id="faq" class="tab-content fade-in" style="display: none;">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">Este tour é adequado para pessoas com mobilidade reduzida?</h4>
+                                <p>
+                                    O tour é maioritariamente acessível, com caminhadas mínimas e opcionais. 
+                                    As quintas têm acesso facilitado e o cruzeiro é totalmente acessível. 
+                                    Contacte-nos para adaptações específicas.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">O tour funciona em caso de chuva?</h4>
+                                <p>
+                                    Sim, o tour mantém-se com chuva ligeira. As visitas às quintas são interiores. 
+                                    O cruzeiro pode ser substituído por uma quinta adicional em caso de mau tempo. 
+                                    Em condições extremas, oferecemos remarcação gratuita.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">Posso comprar vinhos durante o tour?</h4>
+                                <p>
+                                    Absolutamente! Ambas as quintas têm lojas com excelentes vinhos a preços de produtor. 
+                                    Ajudamos no transporte das compras e podemos dar conselhos sobre as melhores opções 
+                                    conforme o seu gosto e orçamento.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">O almoço tem opções vegetarianas?</h4>
+                                <p>
+                                    Sim, informamos sempre o restaurante sobre restrições alimentares. 
+                                    Temos opções vegetarianas, veganas e para celíacos. Por favor, informe-nos 
+                                    na altura da reserva sobre qualquer necessidade especial.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">Que idiomas estão disponíveis para o guia?</h4>
+                                <p>
+                                    Os nossos guias falam português, inglês e francês fluentemente. 
+                                    Espanhol também é possível mediante disponibilidade. Para outros idiomas, 
+                                    podemos arranjar guia especializado com antecedência.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">Posso personalizar o itinerário?</h4>
+                                <p>
+                                    Claro! Em tours privados podemos adaptar o roteiro aos seus interesses. 
+                                    Quintas específicas, tempo extra em determinados locais, ou paragens adicionais 
+                                    são possíveis. Consulte-nos na reserva.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <h4 style="color: var(--secondary-color);">Há desconto para grupos grandes?</h4>
+                                <p>
+                                    Para grupos acima de 8 pessoas, utilizamos mini-bus e oferecemos preços especiais. 
+                                    Contacte-nos diretamente para orçamento personalizado. Também temos condições 
+                                    especiais para agências de viagem.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TAB: AVALIAÇÕES -->
+                <div id="reviews" class="tab-content fade-in" style="display: none;">
+                    <h2 class="section-title">Avaliações dos Clientes</h2>
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div style="font-size: 3rem; color: var(--warning-color); margin-bottom: 0.5rem;">
+                            ★★★★★
+                        </div>
+                        <div style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem;">4.9/5</div>
+                        <div style="color: var(--text-secondary);">Baseado em 127 avaliações</div>
+                    </div>
+                    
+                    <div class="grid grid-2">
+                        
+                        <!-- Avaliação 1 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <div style="color: var(--warning-color);">★★★★★</div>
+                                    <div style="font-size: 0.875rem; color: var(--text-secondary);">Janeiro 2024</div>
+                                </div>
+                                <h4>Experiência Fantástica!</h4>
+                                <p style="font-style: italic; margin: 1rem 0;">
+                                    "O nosso dia no Douro foi absolutamente perfeito. O João foi um guia 
+                                    excepcional, muito conhecedor e divertido. As quintas escolhidas eram 
+                                    fantásticas e o almoço delicioso. O cruzeiro foi o ponto alto!"
+                                </p>
+                                <div style="font-weight: 600;">Maria Santos</div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary);">Lisboa, Portugal</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Avaliação 2 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <div style="color: var(--warning-color);">★★★★★</div>
+                                    <div style="font-size: 0.875rem; color: var(--text-secondary);">Dezembro 2023</div>
+                                </div>
+                                <h4>Unforgettable Day!</h4>
+                                <p style="font-style: italic; margin: 1rem 0;">
+                                    "We had the most amazing day in the Douro Valley. Our guide was incredibly 
+                                    knowledgeable and the wine tastings were excellent. The scenery was 
+                                    breathtaking. Highly recommend!"
+                                </p>
+                                <div style="font-weight: 600;">John & Sarah Miller</div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary);">Manchester, UK</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Avaliação 3 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <div style="color: var(--warning-color);">★★★★★</div>
+                                    <div style="font-size: 0.875rem; color: var(--text-secondary);">Outubro 2023</div>
+                                </div>
+                                <h4>Superou Expectativas</h4>
+                                <p style="font-style: italic; margin: 1rem 0;">
+                                    "Já fizemos vários tours pelo mundo, mas este destacou-se pela qualidade. 
+                                    Organização impecável, guia fantástico e experiências autênticas. 
+                                    Voltaremos certamente!"
+                                </p>
+                                <div style="font-weight: 600;">Carlos Rodrigues</div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary);">Madrid, Espanha</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Avaliação 4 -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <div style="color: var(--warning-color);">★★★★★</div>
+                                    <div style="font-size: 0.875rem; color: var(--text-secondary);">Setembro 2023</div>
+                                </div>
+                                <h4>Parfait!</h4>
+                                <p style="font-style: italic; margin: 1rem 0;">
+                                    "Une journée merveilleuse dans la vallée du Douro. Notre guide parlait 
+                                    parfaitement français et connaissait très bien la région. Les dégustations 
+                                    étaient excellentes et les paysages magnifiques."
+                                </p>
+                                <div style="font-weight: 600;">Pierre & Marie Dubois</div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary);">Lyon, França</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Links para mais avaliações -->
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="#" class="btn btn-secondary" style="margin-right: 1rem;">
+                            Ver no TripAdvisor
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            Ver no Google Reviews
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== FORMULÁRIO DE RESERVA FIXO ===== -->
+        <section id="booking" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title fade-in">Reserve o Seu Tour</h2>
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <form class="card fade-in" data-form-type="booking">
+                        <div class="card-content">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="tour-date" class="form-label">Data do Tour *</label>
+                                    <input type="date" id="tour-date" name="date" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tour-time" class="form-label">Horário Preferido</label>
+                                    <select id="tour-time" name="time" class="form-control">
+                                        <option value="08:30">08:30 (Padrão)</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="09:30">09:30</option>
+                                        <option value="custom">Outro horário</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="passengers" class="form-label">Número de Passageiros *</label>
+                                    <select id="passengers" name="passengers" class="form-control" required>
+                                        <option value="">Selecione...</option>
+                                        <option value="1">1 pessoa</option>
+                                        <option value="2">2 pessoas</option>
+                                        <option value="3">3 pessoas</option>
+                                        <option value="4">4 pessoas</option>
+                                        <option value="5">5 pessoas</option>
+                                        <option value="6">6 pessoas</option>
+                                        <option value="7">7 pessoas</option>
+                                        <option value="8+">8+ pessoas (contactar)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vehicle" class="form-label">Tipo de Veículo</label>
+                                    <select id="vehicle" name="vehicle" class="form-control">
+                                        <option value="sedan">Sedan (até 3 pax) - 285€</option>
+                                        <option value="van">Van de Luxo (até 7 pax) - 490€</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pickup-location" class="form-label">Local de Pickup *</label>
+                                <input type="text" id="pickup-location" name="pickup" class="form-control" 
+                                       placeholder="Hotel, morada ou ponto de referência no Porto" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-name" class="form-label">Nome Completo *</label>
+                                    <input type="text" id="client-name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phone" class="form-label">Telefone *</label>
+                                    <input type="tel" id="client-phone" name="phone" class="form-control" 
+                                           placeholder="+351 xxx xxx xxx" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="client-email" class="form-label">Email *</label>
+                                <input type="email" id="client-email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="special-requests" class="form-label">Pedidos Especiais</label>
+                                <textarea id="special-requests" name="requests" class="form-control" 
+                                          placeholder="Restrições alimentares, preferências de quintas, outros pedidos..."></textarea>
+                            </div>
+                            
+                            <div style="margin: 1.5rem 0; padding: 1rem; background-color: var(--bg-primary); border-radius: var(--border-radius);">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-weight: 600;">Total Estimado:</span>
+                                    <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">
+                                        desde 285€
+                                    </span>
+                                </div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                                    Sinal de 30% na reserva • Restante no dia do tour
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;">
+                                Enviar Pedido de Reserva
+                            </button>
+                            
+                            <div style="text-align: center; margin-top: 1rem;">
+                                <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                                    Ou contacte-nos diretamente:
+                                </p>
+                                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                    <a href="#" class="whatsapp-btn btn btn-sm" 
+                                       data-phone="351123456789" 
+                                       data-message="Olá! Gostaria de reservar o Tour do Vale do Douro.">
+                                        <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> WhatsApp
+                                    </a>
+                                    <a href="tel:+351123456789" class="btn btn-sm"><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> Ligar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recreio Célebre Transfers</h3>
+                    <p>
+                        Mais de uma década oferecendo experiências únicas no Norte de Portugal. 
+                        Transfers seguros e tours inesquecíveis com qualidade garantida.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><span>📘</span></a>
+                        <a href="#" aria-label="Instagram"><span>📷</span></a>
+                        <a href="#" aria-label="TripAdvisor"><span>🦉</span></a>
+                        <a href="#" aria-label="Booking.com"><span>🏨</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="./">Tours</a></li>
+                        <li><a href="../transfers/">Transfers</a></li>
+                        <li><a href="../fleet.html">Frota</a></li>
+                        <li><a href="../portfolio.html">Galeria</a></li>
+                        <li><a href="../about.html">Sobre Nós</a></li>
+                        <li><a href="../contact.html">Contactos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> +351 123 456 789</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">email</span> info@recreio-celebre-transfers.pt</p>
+                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">location_on</span> Porto, Portugal</p>
+                    <p><strong>Atendimento:</strong> 24/7</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Idiomas</h3>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#" style="color: white; font-weight: bold;">Português</a>
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Español</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Recreio Célebre Transfers. Todos os direitos reservados.</p>
+                <p>
+                    <a href="#" style="color: inherit;">Política de Privacidade</a> | 
+                    <a href="#" style="color: inherit;">Termos de Serviço</a> | 
+                    <a href="#" style="color: inherit;">Política de Cookies</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="../js/main.js"></script>
+    
+    <!-- ===== JAVASCRIPT ESPECÍFICO PARA TABS ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Funcionalidade específica das tabs desta página
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.getAttribute('data-target');
+                    
+                    // Remove active de todos
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => {
+                        c.classList.remove('active');
+                        c.style.display = 'none';
+                    });
+                    
+                    // Ativa o clicado
+                    btn.classList.add('active');
+                    const targetContent = document.getElementById(target);
+                    if (targetContent) {
+                        targetContent.style.display = 'block';
+                        targetContent.classList.add('active');
+                        
+                        // Scroll suave para a seção
+                        targetContent.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    }
+                });
+            });
+            
+            // Atualizar preços conforme número de passageiros
+            const passengersSelect = document.getElementById('passengers');
+            const vehicleSelect = document.getElementById('vehicle');
+            
+            if (passengersSelect && vehicleSelect) {
+                passengersSelect.addEventListener('change', function() {
+                    const passengers = parseInt(this.value);
+                    
+                    // Reset das opções
+                    vehicleSelect.innerHTML = '';
+                    
+                    if (passengers <= 3) {
+                        vehicleSelect.innerHTML = `
+                            <option value="sedan">Sedan (até 3 pax) - 285€</option>
+                            <option value="van">Van de Luxo (até 7 pax) - 490€</option>
+                        `;
+                    } else if (passengers <= 7) {
+                        vehicleSelect.innerHTML = `
+                            <option value="van">Van de Luxo (até 7 pax) - 490€</option>
+                        `;
+                    } else {
+                        vehicleSelect.innerHTML = `
+                            <option value="custom">Contactar para grupo grande</option>
+                        `;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
