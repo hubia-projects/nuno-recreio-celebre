@@ -20,8 +20,12 @@
     
     <!-- ===== ESTILOS ===== -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/footer-dark.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- ===== SISTEMA DE TRADUÇÕES ===== -->
+    <script src="js/translations.js?v=4"></script>
     
     <!-- ===== STRUCTURED DATA PARA SEO ===== -->
     <script type="application/ld+json">
@@ -56,12 +60,12 @@
                 
                 <!-- Menu de navegação principal -->
                 <ul class="nav-menu">
-                    <li><a href="./">Home</a></li>
-                    <li><a href="tours/">Tours</a></li>
-                    <li><a href="transfers/">Transfers</a></li>
-                    <li><a href="portfolio.html">Galeria</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="contact.html">Contactos</a></li>
+                    <li><a href="./" data-i18n="nav.home">Home</a></li>
+                    <li><a href="tours/" data-i18n="nav.tours">Tours</a></li>
+                    <li><a href="transfers/" data-i18n="nav.transfers">Transfers</a></li>
+                    <li><a href="portfolio.html" data-i18n="nav.gallery">Galeria</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
                 </ul>
                 
                 <!-- Controlos: tema e idioma -->
@@ -101,19 +105,19 @@
         <!-- ===== HERO SECTION - BANNER PRINCIPAL ===== -->
         <section class="hero">
             <div class="hero-content fade-in">
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-i18n="home.heroTitle">
                     Descubra o Norte de Portugal<br>
-                    <span class="hero-accent-text">Com Conforto e Qualidade</span>
+                    <span class="hero-accent-text" data-i18n="home.heroAccent">Com Conforto e Qualidade</span>
                 </h1>
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" data-i18n="home.heroSubtitle">
                     Transfers seguros e tours memoráveis para descobrir as maravilhas do Porto, 
                     Douro, Minho e muito mais. Experiência, pontualidade e atendimento personalizado.
                 </p>
                 <div class="hero-buttons">
-                    <a href="transfers/" class="btn btn-primary btn-lg">
+                    <a href="transfers/" class="btn btn-primary btn-lg" data-i18n="home.bookTransfer">
                         Reservar Transfer
                     </a>
-                    <a href="tours/" class="btn btn-hero-secondary btn-lg">
+                    <a href="tours/" class="btn btn-hero-secondary btn-lg" data-i18n="home.viewTours">
                         Ver Tours
                     </a>
                 </div>
@@ -123,8 +127,8 @@
         <!-- ===== CARTÕES DE SERVIÇOS PRINCIPAIS ===== -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title fade-in">Os Nossos Serviços</h2>
-                <p class="section-subtitle fade-in">
+                <h2 class="section-title fade-in" data-i18n="home.servicesTitle">Os Nossos Serviços</h2>
+                <p class="section-subtitle fade-in" data-i18n="home.servicesSubtitle">
                     Oferecemos soluções completas de transporte e turismo, 
                     adaptadas às suas necessidades e sempre com a máxima qualidade.
                 </p>
@@ -259,8 +263,8 @@
         <!-- ===== TOURS BEST-SELLERS ===== -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title fade-in">Tours Mais Populares</h2>
-                <p class="section-subtitle fade-in">
+                <h2 class="section-title fade-in" data-i18n="home.popularToursTitle">Tours Mais Populares</h2>
+                <p class="section-subtitle fade-in" data-i18n="home.popularToursSubtitle">
                     Descubra os destinos favoritos dos nossos clientes. 
                     Experiências autênticas e inesquecíveis no Norte de Portugal.
                 </p>
@@ -270,25 +274,27 @@
                     <article class="card fade-in">
                         <div style="position: relative;">
                             <img src="images/Douro/douro-02.jpeg" 
-                                 alt="Douro Valley Tour - Paisagem dos vinhedos" class="card-image">
-                            <div class="badge" style="position: absolute; top: 10px; right: 10px;">
+                                 alt="Tour do Vale do Douro - Paisagem dos vinhedos" 
+                                 data-i18n-alt="home.douroValleyImageAlt" 
+                                 class="card-image">
+                            <div class="badge" style="position: absolute; top: 10px; right: 10px;" data-i18n="home.bestSeller">
                                 Best-Seller
                             </div>
                         </div>
                         <div class="card-content">
-                            <h3 class="card-title">The Douro Valley</h3>
-                            <p class="card-text">
+                            <h3 class="card-title" data-i18n="tours.douroValleyTitle">The Douro Valley</h3>
+                            <p class="card-text" data-i18n="tours.douroValleyDesc">
                                 Tour Completo pelo Vale do Douro Almoço, Degustações de vinhos e cruzeiro no Douro Vinhateiro.
                             </p>
                             <div class="card-footer">
                                 <div class="flex-between">
-                                    <span class="text-secondary">Dia Inteiro</span>
-                                    <span class="text-primary" style="font-weight: 600;">Consultar €</span>
+                                    <span class="text-secondary" data-i18n="home.fullDay">Dia Inteiro</span>
+                                    <span class="text-primary" style="font-weight: 600;" data-i18n="tours.consultUs">Consultar €</span>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="tours/douro-valley.html" class="btn btn-primary" style="width: 100%;">
+                            <a href="tours/douro-valley.html" class="btn btn-primary" style="width: 100%;" data-i18n="buttons.viewMore">
                                 Ver Mais
                             </a>
                         </div>
@@ -298,22 +304,24 @@
                     <article class="card fade-in">
                         <div style="position: relative;">
                             <img src="images/Guimaraes/guimaraes-02.jpeg" 
-                                 alt="Tour Privado Braga - Santuário Bom Jesus" class="card-image">
+                                 alt="Tour Privado Braga - Santuário Bom Jesus" 
+                                 data-i18n-alt="home.bragaTourImageAlt" 
+                                 class="card-image">
                         </div>
                         <div class="card-content">
-                            <h3 class="card-title">Tour Privado Braga</h3>
-                            <p class="card-text">
+                            <h3 class="card-title" data-i18n="tours.bragaTourTitle">Tour Privado Braga</h3>
+                            <p class="card-text" data-i18n="tours.bragaTourDesc">
                                 Aproveite o seu tempo em Portugal com uma viagem de dia inteiro a Braga, património da humanidade.
                             </p>
                             <div class="card-footer">
                                 <div class="flex-between">
-                                    <span class="text-secondary">Dia Inteiro</span>
-                                    <span class="text-primary" style="font-weight: 600;">Consultar €</span>
+                                    <span class="text-secondary" data-i18n="home.fullDay">Dia Inteiro</span>
+                                    <span class="text-primary" style="font-weight: 600;" data-i18n="tours.consultUs">Consultar €</span>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="tours/" class="btn btn-primary" style="width: 100%;">
+                            <a href="tours/" class="btn btn-primary" style="width: 100%;" data-i18n="buttons.viewMore">
                                 Ver Mais
                             </a>
                         </div>
@@ -323,22 +331,24 @@
                     <article class="card fade-in">
                         <div style="position: relative;">
                             <img src="images/Aveiro/aveiro-15.jpeg" 
-                                 alt="Tour Aveiro Privado - Moliceiros nos canais" class="card-image">
+                                 alt="Tour Aveiro Privado - Moliceiros nos canais" 
+                                 data-i18n-alt="home.aveiroTourImageAlt" 
+                                 class="card-image">
                         </div>
                         <div class="card-content">
-                            <h3 class="card-title">Tour Aveiro Privado</h3>
-                            <p class="card-text">
+                            <h3 class="card-title" data-i18n="tours.aveiroTourTitle">Tour Aveiro Privado</h3>
+                            <p class="card-text" data-i18n="tours.aveiroTourDesc">
                                 Tour pelo centro de Aveiro, visita à oficina dos oves moles e passeio de moliceiro na ria de Aveiro.
                             </p>
                             <div class="card-footer">
                                 <div class="flex-between">
-                                    <span class="text-secondary">Meio Dia</span>
-                                    <span class="text-primary" style="font-weight: 600;">Consultar €</span>
+                                    <span class="text-secondary" data-i18n="home.halfDay">Meio Dia</span>
+                                    <span class="text-primary" style="font-weight: 600;" data-i18n="tours.consultUs">Consultar €</span>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="tours/" class="btn btn-primary" style="width: 100%;">
+                            <a href="tours/" class="btn btn-primary" style="width: 100%;" data-i18n="buttons.viewMore">
                                 Ver Mais
                             </a>
                         </div>
@@ -348,22 +358,24 @@
                     <article class="card fade-in">
                         <div style="position: relative;">
                             <img src="images/Porto/porto-01.jpg" 
-                                 alt="Tour Privado Porto - Ribeira do Porto" class="card-image">
+                                 alt="Tour Privado Porto - Ribeira do Porto" 
+                                 data-i18n-alt="home.portoTourImageAlt" 
+                                 class="card-image">
                         </div>
                         <div class="card-content">
-                            <h3 class="card-title">Tour Privado Porto</h3>
-                            <p class="card-text">
+                            <h3 class="card-title" data-i18n="tours.portoTourTitle">Tour Privado Porto</h3>
+                            <p class="card-text" data-i18n="tours.portoTourDesc">
                                 Gostava de conhecer o Porto com maior detalhe? Participa nesta viagem durante todo o dia.
                             </p>
                             <div class="card-footer">
                                 <div class="flex-between">
-                                    <span class="text-secondary">Dia Completo</span>
-                                    <span class="text-primary" style="font-weight: 600;">Consultar €</span>
+                                    <span class="text-secondary" data-i18n="home.fullDay">Dia Completo</span>
+                                    <span class="text-primary" style="font-weight: 600;" data-i18n="tours.consultUs">Consultar €</span>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="tours/" class="btn btn-primary" style="width: 100%;">
+                            <a href="tours/" class="btn btn-primary" style="width: 100%;" data-i18n="buttons.viewMore">
                                 Ver Mais
                             </a>
                         </div>
@@ -372,7 +384,7 @@
                 
                 <!-- Link para ver todos os tours -->
                 <div class="text-center mt-4 fade-in">
-                    <a href="tours/" class="btn btn-secondary btn-lg">
+                    <a href="tours/" class="btn btn-secondary btn-lg" data-i18n="buttons.seeAll">
                         Ver Todos os Tours
                     </a>
                 </div>
@@ -382,8 +394,8 @@
         <!-- ===== CARROSSEL DE IMAGENS REAIS ===== -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title fade-in">Momentos Únicos</h2>
-                <p class="section-subtitle fade-in">
+                <h2 class="section-title fade-in" data-i18n="home.uniqueMomentsTitle">Momentos Únicos</h2>
+                <p class="section-subtitle fade-in" data-i18n="home.uniqueMomentsSubtitle">
                     Veja alguns dos momentos especiais que os nossos clientes viveram connosco.
                 </p>
                 
@@ -392,57 +404,62 @@
                         <!-- Slide 1 - Porto -->
                         <div class="carousel-slide">
                             <img src="images/Porto/porto-01.jpg" 
-                                 alt="Ponte Dom Luís I no Porto ao pôr-do-sol">
+                                 alt="Ponte Dom Luís I no Porto ao pôr-do-sol"
+                                 data-i18n-alt="home.portoCarouselAlt">
                             <div class="carousel-caption">
-                                <h3>Porto Encantador</h3>
-                                <p>As vistas mais bonitas da Cidade Invicta</p>
+                                <h3 data-i18n="home.portoSlideTitle">Porto Encantador</h3>
+                                <p data-i18n="home.portoSlideDesc">As vistas mais bonitas da Cidade Invicta</p>
                             </div>
                         </div>
                         
                         <!-- Slide 2 - Douro -->
                         <div class="carousel-slide">
                             <img src="images/Douro/douro-01.jpeg" 
-                                 alt="Terraços de vinhas no Vale do Douro">
+                                 alt="Terraços de vinhas no Vale do Douro"
+                                 data-i18n-alt="home.douroCarouselAlt">
                             <div class="carousel-caption">
-                                <h3>Vale do Douro</h3>
-                                <p>Paisagens Património Mundial da UNESCO</p>
+                                <h3 data-i18n="home.douroSlideTitle">Vale do Douro</h3>
+                                <p data-i18n="home.douroSlideDesc">Paisagens Património Mundial da UNESCO</p>
                             </div>
                         </div>
                         
                         <!-- Slide 3 - Aveiro -->
                         <div class="carousel-slide">
                             <img src="images/Aveiro/aveiro-54.jpg" 
-                                 alt="Moliceiros coloridos nos canais de Aveiro">
+                                 alt="Moliceiros coloridos nos canais de Aveiro"
+                                 data-i18n-alt="home.aveiroCarouselAlt">
                             <div class="carousel-caption">
-                                <h3>Aveiro Colorida</h3>
-                                <p>A "Veneza Portuguesa" e os seus encantos</p>
+                                <h3 data-i18n="home.aveiroSlideTitle">Aveiro Colorida</h3>
+                                <p data-i18n="home.aveiroSlideDesc">A "Veneza Portuguesa" e os seus encantos</p>
                             </div>
                         </div>
                         
                         <!-- Slide 4 - Guimarães -->
                         <div class="carousel-slide">
                             <img src="images/Guimaraes/guimaraes-09.jpg" 
-                                 alt="Castelo de Guimarães - Berço de Portugal">
+                                 alt="Castelo de Guimarães - Berço de Portugal"
+                                 data-i18n-alt="home.guimaraesCarouselAlt">
                             <div class="carousel-caption">
-                                <h3>Guimarães Histórica</h3>
-                                <p>Berço de Portugal e património mundial</p>
+                                <h3 data-i18n="home.guimaraesSlideTitle">Guimarães Histórica</h3>
+                                <p data-i18n="home.guimaraesSlideDesc">Berço de Portugal e património mundial</p>
                             </div>
                         </div>
                         
                         <!-- Slide 5 - Salinas de Aveiro -->
                         <div class="carousel-slide">
                             <img src="images/Aveiro Salinas/aveiro-salinas-01.jpeg" 
-                                 alt="Salinas tradicionais de Aveiro">
+                                 alt="Salinas tradicionais de Aveiro"
+                                 data-i18n-alt="home.salinasCarouselAlt">
                             <div class="carousel-caption">
-                                <h3>Salinas de Aveiro</h3>
-                                <p>Tradição milenar e paisagens únicas</p>
+                                <h3 data-i18n="home.salinasSlideTitle">Salinas de Aveiro</h3>
+                                <p data-i18n="home.salinasSlideDesc">Tradição milenar e paisagens únicas</p>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Controlos do carrossel -->
-                    <button class="carousel-nav prev" aria-label="Imagem anterior">‹</button>
-                    <button class="carousel-nav next" aria-label="Próxima imagem">›</button>
+                    <button class="carousel-nav prev" aria-label="Imagem anterior" data-i18n-aria="home.prevImageLabel">‹</button>
+                    <button class="carousel-nav next" aria-label="Próxima imagem" data-i18n-aria="home.nextImageLabel">›</button>
                     
                     <!-- Indicadores -->
                     <div class="carousel-indicators"></div>
@@ -453,8 +470,8 @@
         <!-- ===== PRÉVIA DA FROTA ===== -->
         <section class="section" style="background-color: var(--bg-secondary);">
             <div class="container">
-                <h2 class="section-title fade-in">A Nossa Frota</h2>
-                <p class="section-subtitle fade-in">
+                <h2 class="section-title fade-in" data-i18n="home.ourFleetTitle">A Nossa Frota</h2>
+                <p class="section-subtitle fade-in" data-i18n="home.ourFleetSubtitle">
                     Veículo moderno e confortável para atender a todas as suas necessidades, 
                     desde viagens individuais até grupos maiores.
                 </p>
@@ -463,17 +480,19 @@
                     <!-- Sedan Executivo -->
                     <div class="card text-center fade-in">
                         <img src="images/Tranfer/transfer-01.jpg" 
-                             alt="Sedan Executivo - Mercedes classe E" class="card-image">
+                             alt="Sedan Executivo - Mercedes classe E" 
+                             data-i18n-alt="home.executiveSedanImageAlt"
+                             class="card-image">
                         <div class="card-content">
-                            <h3 class="card-title">Sedan Executivo</h3>
+                            <h3 class="card-title" data-i18n="home.executiveSedan">Sedan Executivo</h3>
                             <p class="card-text">
-                                <strong>Até 3 passageiros</strong><br>
-                                2 malas grandes + 2 de mão
+                                <strong data-i18n="home.upTo3Passengers">Até 3 passageiros</strong><br>
+                                <span data-i18n="home.largeBagsDescription">2 malas grandes + 2 de mão</span>
                             </p>
                             <div style="margin-top: 1rem;">
                                 <span style="font-size: 0.875rem; color: var(--text-secondary);">
-                                    <span class="material-icons" style="font-size: 16px; vertical-align: middle;">person</span> 3 pax &nbsp; 
-                                    <span class="material-icons" style="font-size: 16px; vertical-align: middle;">luggage</span> 2 malas
+                                    <span class="material-icons" style="font-size: 16px; vertical-align: middle;">person</span> <span data-i18n="home.threePax">3 pax</span> &nbsp; 
+                                    <span class="material-icons" style="font-size: 16px; vertical-align: middle;">luggage</span> <span data-i18n="home.twoBags">2 malas</span>
                                 </span>
                             </div>
                         </div>
@@ -482,7 +501,7 @@
                 
                 <!-- Link para frota completa -->
                 <div class="text-center mt-4 fade-in">
-                    <a href="transfers/#frota" class="btn btn-secondary btn-lg">
+                    <a href="transfers/#frota" class="btn btn-secondary btn-lg" data-i18n="home.seeMoreDetails">
                         Ver Mais Detalhes
                     </a>
                 </div>
@@ -493,8 +512,8 @@
         <section class="section">
             <div class="container text-center">
                 <div class="fade-in">
-                    <h2 class="section-title">Pronto para a Sua Próxima Aventura?</h2>
-                    <p class="section-subtitle">
+                    <h2 class="section-title" data-i18n="home.readyForAdventure">Pronto para a Sua Próxima Aventura?</h2>
+                    <p class="section-subtitle" data-i18n="home.contactUsPersonalize">
                         Entre em contacto connosco e personalize a sua experiência. 
                         Estamos aqui para tornar a sua viagem inesquecível.
                     </p>
@@ -504,7 +523,7 @@
                         <a href="#" class="whatsapp-btn btn btn-accent btn-lg" 
                            data-phone="351932046230" 
                            data-message="Olá! Gostaria de mais informações sobre tours e transfers.">
-                            <span class="material-icons" style="vertical-align: middle; font-size: 1.5rem;">chat</span> WhatsApp
+                            <span class="material-icons" style="vertical-align: middle; font-size: 1.5rem;">chat</span> <span data-i18n="buttons.whatsapp">WhatsApp</span>
                         </a>
                         
                         <!-- Telefone -->
@@ -514,7 +533,7 @@
                         
                         <!-- Email -->
                         <a href="mailto:info@recreio-celebre-transfers.pt" class="btn btn-primary btn-lg">
-                            <span class="material-icons" style="vertical-align: middle; font-size: 1.5rem;">email</span> Email
+                            <span class="material-icons" style="vertical-align: middle; font-size: 1.5rem;">email</span> <span data-i18n="buttons.email">Email</span>
                         </a>
                     </div>
                 </div>
@@ -530,7 +549,7 @@
                 <!-- Informações da empresa -->
                 <div class="footer-section">
                     <h3>Recreio Célebre Transfers</h3>
-                    <p>
+                    <p data-i18n="footer.companyInfo">
                         Mais de uma década oferecendo experiências únicas no Norte de Portugal. 
                         Transfers seguros e tours inesquecíveis com qualidade garantida.
                     </p>
@@ -544,28 +563,28 @@
                 
                 <!-- Links rápidos -->
                 <div class="footer-section">
-                    <h3>Links Rápidos</h3>
+                    <h3 data-i18n="footer.quickLinks">Links Rápidos</h3>
                     <ul class="footer-links">
-                        <li><a href="tours/">Tours</a></li>
-                        <li><a href="transfers/">Transfers</a></li>
-                        <li><a href="portfolio.html">Galeria</a></li>
-                        <li><a href="about.html">Sobre Nós</a></li>
-                        <li><a href="contact.html">Contactos</a></li>
+                        <li><a href="tours/" data-i18n="nav.tours">Tours</a></li>
+                        <li><a href="transfers/" data-i18n="nav.transfers">Transfers</a></li>
+                        <li><a href="portfolio.html" data-i18n="nav.gallery">Galeria</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">Sobre Nós</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
                     </ul>
                 </div>
                 
                 <!-- Contactos -->
                 <div class="footer-section">
-                    <h3>Contactos</h3>
+                    <h3 data-i18n="footer.contactInfo">Contactos</h3>
                     <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">phone</span> +351 932 046 230</p>
                     <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">email</span> nunofilipegabriel@gmail.com</p>
                     <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">location_on</span> R. Arménia, 781º Esquerdo <br> 4050-066 - Porto, Portugal</p>
-                    <p><strong>Atendimento:</strong> 24/7</p>
+                    <p><strong data-i18n="footer.support">Atendimento:</strong> 24/7</p>
                 </div>
                 
                 <!-- Seletor de idioma (se não estiver no header) -->
                 <div class="footer-section">
-                    <h3>Idiomas</h3>
+                    <h3 data-i18n="footer.languages">Idiomas</h3>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <a href="#" style="color: white; font-weight: bold;">Português</a>
                         <a href="#">English</a>
@@ -577,11 +596,11 @@
             
             <!-- Rodapé legal -->
             <div class="footer-bottom">
-                <p>&copy; 2024 Recreio Célebre Transfers. Todos os direitos reservados.</p>
+                <p>&copy; 2024 <span data-i18n="footer.rightsReserved">Recreio Célebre Transfers. Todos os direitos reservados.</span></p>
                 <p>
-                    <a href="#" style="color: inherit;">Política de Privacidade</a> | 
-                    <a href="#" style="color: inherit;">Termos de Serviço</a> | 
-                    <a href="#" style="color: inherit;">Política de Cookies</a>
+                    <a href="#" style="color: inherit;" data-i18n="footer.privacyPolicy">Política de Privacidade</a> | 
+                    <a href="#" style="color: inherit;" data-i18n="footer.termsConditions">Termos de Serviço</a> | 
+                    <a href="#" style="color: inherit;" data-i18n="footer.cookiePolicy">Política de Cookies</a>
                 </p>
             </div>
         </div>
@@ -593,6 +612,6 @@
     </button>
 
     <!-- ===== JAVASCRIPT ===== -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 </html>

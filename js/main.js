@@ -123,10 +123,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ===== SELETOR DE IDIOMA =====
+    // ===== SISTEMA COMPLETO DE MULTI-IDIOMA =====
     function initializeLanguageSelector() {
         const languageBtn = document.querySelector('.language-btn');
         const languageDropdown = document.querySelector('.language-dropdown');
+        
+        // Carregar idioma salvo ou definir padrão
+        const savedLanguage = localStorage.getItem('language') || 'pt';
+        const currentLanguage = savedLanguage;
+        
+        // Aplicar idioma inicial
+        changeLanguage(currentLanguage);
         
         if (languageBtn && languageDropdown) {
             languageBtn.addEventListener('click', (e) => {
@@ -147,21 +154,408 @@ document.addEventListener('DOMContentLoaded', function() {
                     const selectedLang = link.getAttribute('data-lang');
                     const selectedText = link.textContent;
                     
-                    // Atualizar texto do botão
-                    languageBtn.textContent = selectedText;
+                    // Trocar idioma
+                    changeLanguage(selectedLang);
                     
-                    // Aqui seria implementada a troca de idioma real
-                    console.log(`Idioma selecionado: ${selectedLang}`);
+                    // Salvar preferência
+                    localStorage.setItem('language', selectedLang);
                     
                     // Fechar dropdown
                     languageDropdown.classList.remove('show');
                     
-                    // Simular troca de idioma (apenas log por enquanto)
-                    showNotification(`Idioma alterado para ${selectedText}`, 'success');
+                    // Mostrar mensagem de sucesso
+                    const messages = translations[selectedLang]?.messages || translations.pt.messages;
+                    showNotification(messages.languageChanged, 'success');
                 });
             });
         }
     }
+    
+    // ===== FUNÇÃO PRINCIPAL DE TROCA DE IDIOMA =====
+    function changeLanguage(lang) {
+        if (!translations[lang]) {
+            console.warn(`Idioma ${lang} não encontrado. Usando português como padrão.`);
+            lang = 'pt';
+        }
+        
+        const t = translations[lang];
+        
+        // Atualizar atributo lang do HTML
+        document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 
+                                      lang === 'en' ? 'en-US' : 
+                                      lang === 'fr' ? 'fr-FR' : 
+                                      lang === 'es' ? 'es-ES' : 'pt-PT';
+        
+        // Atualizar botão de idioma
+        updateLanguageButton(lang);
+        
+        // Atualizar título da página
+        updatePageTitle(lang);
+        
+        // Atualizar meta description
+        updateMetaDescription(lang);
+        
+        // Atualizar conteúdo da página baseado na página atual
+        updatePageContent(lang, t);
+        
+        // Trigger evento personalizado para componentes externos
+        document.dispatchEvent(new CustomEvent('languageChanged', { 
+            detail: { language: lang, translations: t } 
+        }));
+    }
+    
+    // ===== ATUALIZAR BOTÃO DE IDIOMA =====
+    function updateLanguageButton(lang) {
+        const languageBtn = document.querySelector('.language-btn');
+        if (languageBtn) {
+            const languageNames = {
+                pt: 'PT',
+                en: 'EN', 
+                fr: 'FR',
+                es: 'ES'
+            };
+            
+            // Manter ícone e atualizar texto
+            const icon = languageBtn.querySelector('i');
+            if (icon) {
+                languageBtn.innerHTML = `<i class="bi bi-globe"></i> ${languageNames[lang]}`;
+            } else {
+                languageBtn.textContent = languageNames[lang];
+            }
+        }
+    }
+    
+    // ===== ATUALIZAR TÍTULO DA PÁGINA =====
+    function updatePageTitle(lang) {
+        const t = translations[lang];
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
+        let newTitle = '';
+        
+        if (currentPath === '/' || currentPath.endsWith('/index.html') || currentPage === 'index.html') {
+            newTitle = t.home.title;
+        } else if (currentPath.includes('about.html') || currentPage === 'about.html') {
+            newTitle = t.about.title;
+        } else if (currentPath.includes('contact.html') || currentPage === 'contact.html') {
+            newTitle = t.contact.title;
+        } else if (currentPath.includes('/tours') || currentPath.includes('tours/')) {
+            newTitle = t.tours.title;
+        } else if (currentPath.includes('/transfers') || currentPath.includes('transfers/')) {
+            newTitle = t.transfers.title;
+        } else if (currentPath.includes('portfolio.html') || currentPage === 'portfolio.html') {
+            newTitle = t.portfolio.title;
+        }
+        
+        if (newTitle) {
+            document.title = newTitle;
+        }
+    }
+    
+    // ===== ATUALIZAR META DESCRIPTION =====
+    function updateMetaDescription(lang) {
+        const t = translations[lang];
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
+        let newDescription = '';
+        
+        if (currentPath === '/' || currentPath.endsWith('/index.html') || currentPage === 'index.html') {
+            newDescription = t.home.metaDescription;
+        } else if (currentPath.includes('about.html') || currentPage === 'about.html') {
+            newDescription = t.about.metaDescription;
+        } else if (currentPath.includes('contact.html') || currentPage === 'contact.html') {
+            newDescription = t.contact.metaDescription;
+        } else if (currentPath.includes('/tours') || currentPath.includes('tours/')) {
+            newDescription = t.tours.metaDescription;
+        } else if (currentPath.includes('/transfers') || currentPath.includes('transfers/')) {
+            newDescription = t.transfers.metaDescription;
+        } else if (currentPath.includes('portfolio.html') || currentPage === 'portfolio.html') {
+            newDescription = t.portfolio.metaDescription;
+        }
+        
+        if (newDescription) {
+            let metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) {
+                metaDesc.setAttribute('content', newDescription);
+            }
+        }
+    }
+    
+    // ===== ATUALIZAR CONTEÚDO DA PÁGINA =====
+    function updatePageContent(lang, t) {
+        // Atualizar navegação
+        updateNavigation(t);
+        
+        // Atualizar todos os elementos com atributo data-i18n
+        updateElementsWithDataI18n(lang, t);
+        
+        // Detectar página atual e atualizar conteúdo específico
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
+        if (currentPath === '/' || currentPath.endsWith('/index.html') || currentPage === 'index.html') {
+            updateHomePage(t);
+        } else if (currentPath.includes('about.html') || currentPage === 'about.html') {
+            updateAboutPage(t);
+        } else if (currentPath.includes('contact.html') || currentPage === 'contact.html') {
+            updateContactPage(t);
+        } else if (currentPath.includes('/tours') || currentPath.includes('tours/')) {
+            updateToursPage(t);
+        } else if (currentPath.includes('/transfers') || currentPath.includes('transfers/')) {
+            updateTransfersPage(t);
+        } else if (currentPath.includes('portfolio.html') || currentPage === 'portfolio.html') {
+            updatePortfolioPage(t);
+        }
+    }
+    
+    // ===== ATUALIZAR ELEMENTOS COM DATA-I18N =====
+    function updateElementsWithDataI18n(lang, t) {
+        const elementsWithI18n = document.querySelectorAll('[data-i18n]');
+        
+        elementsWithI18n.forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const translation = getNestedTranslation(t, key);
+            
+            if (translation) {
+                // Se o elemento tem filhos com HTML, preservar estrutura
+                if (element.children.length > 0 && !key.includes('nav.')) {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
+            }
+        });
+        
+        // Atualizar atributos alt de imagens
+        const imagesWithI18nAlt = document.querySelectorAll('[data-i18n-alt]');
+        imagesWithI18nAlt.forEach(img => {
+            const altKey = img.getAttribute('data-i18n-alt');
+            const altTranslation = getNestedTranslation(t, altKey);
+            
+            if (altTranslation) {
+                img.setAttribute('alt', altTranslation);
+            }
+        });
+        
+        // Atualizar atributos aria-label
+        const elementsWithI18nAria = document.querySelectorAll('[data-i18n-aria]');
+        elementsWithI18nAria.forEach(element => {
+            const ariaKey = element.getAttribute('data-i18n-aria');
+            const ariaTranslation = getNestedTranslation(t, ariaKey);
+            
+            if (ariaTranslation) {
+                element.setAttribute('aria-label', ariaTranslation);
+            }
+        });
+    }
+    
+    // ===== OBTER TRADUÇÃO ANINHADA =====
+    function getNestedTranslation(obj, path) {
+        return path.split('.').reduce((current, key) => current && current[key], obj);
+    }
+    
+    // ===== ATUALIZAR NAVEGAÇÃO =====
+    function updateNavigation(t) {
+        // Atualizar menu de navegação
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        const navTexts = [t.nav.home, t.nav.tours, t.nav.transfers, t.nav.gallery, t.nav.about, t.nav.contact];
+        
+        navLinks.forEach((link, index) => {
+            if (navTexts[index]) {
+                link.textContent = navTexts[index];
+            }
+        });
+        
+        // Atualizar dropdown de idiomas
+        const languageDropdown = document.querySelector('.language-dropdown');
+        if (languageDropdown) {
+            const languageLinks = languageDropdown.querySelectorAll('a');
+            const languageNames = ['Português', 'English', 'Français', 'Español'];
+            languageLinks.forEach((link, index) => {
+                if (languageNames[index]) {
+                    link.textContent = languageNames[index];
+                }
+            });
+        }
+    }
+    
+    // ===== ATUALIZAR PÁGINA INICIAL =====
+    function updateHomePage(t) {
+        // Hero section
+        updateElementText('.hero-title', t.home.heroTitle);
+        updateElementText('.hero-accent-text', t.home.heroAccent);
+        updateElementText('.hero-subtitle', t.home.heroSubtitle);
+        
+        // Botões do hero
+        updateElementText('.btn-primary', t.home.bookTransfer);
+        updateElementText('.btn-hero-secondary', t.home.viewTours);
+        
+        // Seção de serviços
+        updateElementText('.section-title', t.home.servicesTitle, 0);
+        updateElementText('.section-subtitle', t.home.servicesSubtitle, 0);
+        
+        // Cards de serviços
+        const cardTitles = document.querySelectorAll('.card-title');
+        const cardTexts = document.querySelectorAll('.card-text');
+        const serviceTitles = [t.home.airportTransfer, t.home.executiveTransfer, t.home.douroTours];
+        const serviceDescs = [t.home.airportTransferDesc, t.home.executiveTransferDesc, t.home.douroToursDesc];
+        
+        cardTitles.forEach((title, index) => {
+            if (serviceTitles[index]) {
+                title.textContent = serviceTitles[index];
+            }
+        });
+        
+        cardTexts.forEach((text, index) => {
+            if (serviceDescs[index]) {
+                text.textContent = serviceDescs[index];
+            }
+        });
+        
+        // Seção "Porquê escolher-nos"
+        const whyChooseTitle = document.querySelectorAll('.section-title')[1];
+        const whyChooseSubtitle = document.querySelectorAll('.section-subtitle')[1];
+        if (whyChooseTitle) whyChooseTitle.textContent = t.home.whyChooseTitle;
+        if (whyChooseSubtitle) whyChooseSubtitle.textContent = t.home.whyChooseSubtitle;
+        
+        // Cards de vantagens
+        const advantageTitles = [t.home.punctuality, t.home.comfort, t.home.guides, t.home.experience];
+        const advantageDescs = [t.home.punctualityDesc, t.home.comfortDesc, t.home.guidesDesc, t.home.experienceDesc];
+        
+        const advantageCards = document.querySelectorAll('.text-center .card-title');
+        const advantageTexts = document.querySelectorAll('.text-center .card-text');
+        
+        advantageCards.forEach((card, index) => {
+            if (advantageTitles[index]) {
+                card.textContent = advantageTitles[index];
+            }
+        });
+        
+        advantageTexts.forEach((text, index) => {
+            if (advantageDescs[index]) {
+                text.textContent = advantageDescs[index];
+            }
+        });
+        
+        // Botões
+        updateButtonsText(t);
+    }
+    
+    // ===== ATUALIZAR PÁGINA SOBRE =====
+    function updateAboutPage(t) {
+        updateElementText('.hero-title', t.about.heroTitle);
+        updateElementText('.hero-subtitle', t.about.heroSubtitle);
+        updateElementText('.section-title', t.about.companyName, 0);
+        
+        // Atualizar textos da história (com HTML)
+        const historyTexts = document.querySelectorAll('p[style*="line-height"]');
+        if (historyTexts.length >= 3) {
+            historyTexts[0].innerHTML = t.about.historyText1;
+            historyTexts[1].innerHTML = t.about.historyText2;
+            historyTexts[2].innerHTML = t.about.historyText3;
+        }
+        
+        updateButtonsText(t);
+    }
+    
+    // ===== ATUALIZAR PÁGINA CONTACTOS =====
+    function updateContactPage(t) {
+        updateElementText('.hero-title', t.contact.heroTitle);
+        updateElementText('.hero-subtitle', t.contact.heroSubtitle);
+        
+        // Formulário
+        updateElementText('label[for="name"]', t.contact.fullName);
+        updateElementText('label[for="email"]', t.contact.emailAddress);
+        updateElementText('label[for="phone"]', t.contact.phoneNumber);
+        updateElementText('label[for="subject"]', t.contact.subject);
+        updateElementText('label[for="message"]', t.contact.message);
+        
+        // Placeholders
+        updatePlaceholder('input[name="name"]', t.contact.fullName);
+        updatePlaceholder('input[name="email"]', t.contact.emailAddress);
+        updatePlaceholder('input[name="phone"]', t.contact.phoneNumber);
+        updatePlaceholder('input[name="subject"]', t.contact.subject);
+        updatePlaceholder('textarea[name="message"]', t.contact.message);
+        
+        updateButtonsText(t);
+    }
+    
+    // ===== ATUALIZAR PÁGINA TOURS =====
+    function updateToursPage(t) {
+        updateElementText('.hero-title', t.tours.heroTitle);
+        updateElementText('.hero-subtitle', t.tours.heroSubtitle);
+        updateElementText('.section-title', t.tours.ourTours, 0);
+        updateElementText('.section-subtitle', t.tours.toursDescription, 0);
+        
+        updateButtonsText(t);
+    }
+    
+    // ===== ATUALIZAR PÁGINA TRANSFERS =====
+    function updateTransfersPage(t) {
+        updateElementText('.hero-title', t.transfers.heroTitle);
+        updateElementText('.hero-subtitle', t.transfers.heroSubtitle);
+        updateElementText('.section-title', t.transfers.ourServices, 0);
+        updateElementText('.section-subtitle', t.transfers.servicesDescription, 0);
+        
+        updateButtonsText(t);
+    }
+    
+    // ===== ATUALIZAR PÁGINA GALERIA =====
+    function updatePortfolioPage(t) {
+        updateElementText('.hero-title', t.portfolio.heroTitle);
+        updateElementText('.hero-subtitle', t.portfolio.heroSubtitle);
+        updateElementText('.section-title', t.portfolio.gallery, 0);
+        updateElementText('.section-subtitle', t.portfolio.galleryDescription, 0);
+        
+        updateButtonsText(t);
+    }
+    
+    // ===== FUNÇÕES UTILITÁRIAS =====
+    function updateElementText(selector, text, index = null) {
+        const elements = document.querySelectorAll(selector);
+        if (elements.length > 0) {
+            if (index !== null && elements[index]) {
+                elements[index].textContent = text;
+            } else if (index === null) {
+                elements[0].textContent = text;
+            }
+        }
+    }
+    
+    function updatePlaceholder(selector, text) {
+        const element = document.querySelector(selector);
+        if (element) {
+            element.setAttribute('placeholder', text);
+        }
+    }
+    
+    function updateButtonsText(t) {
+        // Atualizar botões comuns
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(btn => {
+            const text = btn.textContent.trim();
+            
+            // Mapear textos comuns de botões
+            if (text.includes('Reservar') || text.includes('Book') || text.includes('Réserver') || text.includes('Reservar')) {
+                if (btn.classList.contains('btn-primary')) {
+                    btn.textContent = t.buttons.book;
+                }
+            }
+            if (text.includes('Ver') || text.includes('View') || text.includes('Voir') || text.includes('Ver')) {
+                btn.textContent = t.buttons.viewMore;
+            }
+            if (text.includes('Contactar') || text.includes('Contact') || text.includes('Contacter') || text.includes('Contactar')) {
+                btn.textContent = t.buttons.contact;
+            }
+            if (text.includes('Enviar') || text.includes('Send') || text.includes('Envoyer') || text.includes('Enviar')) {
+                btn.textContent = t.buttons.submit;
+            }
+        });
+    }
+    
+    // ===== EXPOSER FUNÇÃO GLOBAL =====
+    window.changeLanguage = changeLanguage;
     
     // ===== CARROSSEL DE IMAGENS =====
     function initializeCarousel() {

@@ -1139,6 +1139,54 @@ input[list]:focus {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* ===== FOOTER MODO DARK ===== */
+[data-theme="dark"] .footer {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+[data-theme="dark"] .footer-section h3 {
+    color: white;
+}
+
+[data-theme="dark"] .footer-section p,
+[data-theme="dark"] .footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .footer-section a:hover {
+    color: white;
+}
+
+[data-theme="dark"] .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .social-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para os links de idiomas no footer */
+.footer-section .language-links a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-section .language-links a:hover {
+    color: white !important;
+}
+
+.footer-section .language-links a[style*="font-weight: bold"] {
+    color: white !important;
+    font-weight: bold !important;
+}
+
 /* ===== ACESSIBILIDADE ===== */
 @media (prefers-reduced-motion: reduce) {
     * {
