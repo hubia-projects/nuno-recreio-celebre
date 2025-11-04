@@ -770,6 +770,64 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeLazyLoading();
     logPerformance();
     
+    // ===== NAVEGAÇÃO ATIVA AUTOMÁTICA =====
+    function initializeActiveNavigation() {
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
+        // Remove todas as classes active existentes
+        navLinks.forEach(link => link.classList.remove('active'));
+        
+        // Lógica para determinar qual link deve estar ativo
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            const linkPath = href.replace('../', '').replace('./', '');
+            
+            // Verifica diferentes cenários
+            let shouldBeActive = false;
+            
+            if (currentPath === '/' || currentPath.endsWith('/index.html') || currentPage === 'index.html') {
+                // Página inicial
+                if (href === '../' || href === './' || href === 'index.html' || link.textContent.trim() === 'Home') {
+                    shouldBeActive = true;
+                }
+            } else if (currentPath.includes('/tours') || currentPath.includes('tours/')) {
+                // Página de tours
+                if (href.includes('tours') || link.textContent.trim() === 'Tours') {
+                    shouldBeActive = true;
+                }
+            } else if (currentPath.includes('/transfers') || currentPath.includes('transfers/')) {
+                // Página de transfers
+                if (href.includes('transfers') || link.textContent.trim() === 'Transfers') {
+                    shouldBeActive = true;
+                }
+            } else if (currentPath.includes('portfolio.html') || currentPage === 'portfolio.html') {
+                // Página de galeria
+                if (href.includes('portfolio.html') || link.textContent.trim() === 'Galeria') {
+                    shouldBeActive = true;
+                }
+            } else if (currentPath.includes('about.html') || currentPage === 'about.html') {
+                // Página sobre
+                if (href.includes('about.html') || link.textContent.trim() === 'Sobre') {
+                    shouldBeActive = true;
+                }
+            } else if (currentPath.includes('contact.html') || currentPage === 'contact.html') {
+                // Página de contactos
+                if (href.includes('contact.html') || link.textContent.trim() === 'Contactos') {
+                    shouldBeActive = true;
+                }
+            }
+            
+            if (shouldBeActive) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    // Inicializar navegação ativa
+    initializeActiveNavigation();
+    
     console.log('🚀 Recreio Célebre Transfers - Site carregado com sucesso!');
 });
 

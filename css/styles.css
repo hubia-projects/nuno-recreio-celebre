@@ -51,6 +51,12 @@
 
 /* ===== MODO DARK ===== */
 [data-theme="dark"] {
+    --primary-color: #ffffff;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    
     --bg-primary: #1a1a1a;
     --bg-secondary: #2d2d2d;
     --bg-card: #333333;
@@ -221,6 +227,15 @@ body {
     width: 100%;
 }
 
+.nav-menu a.active {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.nav-menu a.active::after {
+    width: 100%;
+}
+
 /* Botões de tema e idioma */
 .nav-controls {
     display: flex;
@@ -358,13 +373,13 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
 }
 
 .btn-secondary:hover {
-    background-color: #ffffff;
-    color: var(--primary-color);
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
 }
 
 /* Botão secundário no modo dark */
@@ -768,6 +783,37 @@ textarea.form-control {
 /* Ajustes para modo dark */
 [data-theme="dark"] .text-primary {
     color: #ffffff;
+}
+
+/* Garantir que elementos com --primary-color sejam brancos no modo dark */
+[data-theme="dark"] [style*="color: var(--primary-color)"],
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .section-title {
+    color: #ffffff !important;
+}
+
+/* Botões de filtro - modo light */
+.filter-btn {
+    color: var(--text-primary) !important;
+    border-color: var(--text-primary) !important;
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* Botões de filtro - modo dark */
+[data-theme="dark"] .filter-btn {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+[data-theme="dark"] .filter-btn.active {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    border-color: var(--secondary-color) !important;
 }
 
 /* ===== BOTÕES ESPECIAIS DE CONTACTO ===== */
