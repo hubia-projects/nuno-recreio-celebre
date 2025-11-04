@@ -63,7 +63,7 @@
     <main style="margin-top: 80px;">
         
         <!-- ===== HERO ===== -->
-        <section class="hero" style="height: 60vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1566055844781-47e208c64ee7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <section class="hero" style="height: 60vh; min-height: 400px; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/Douro/douro-01.jpeg') center/cover no-repeat;">
             <div class="hero-content fade-in">
                 <h1 class="hero-title">Galeria de Destinos</h1>
                 <p class="hero-subtitle">
@@ -76,24 +76,27 @@
         <!-- ===== FILTROS DE GALERIA ===== -->
         <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
             <div class="container">
-                <div class="filter-tabs fade-in">
-                    <button class="filter-btn active" data-filter="all">
+                <div class="gallery-filters fade-in" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <button class="btn btn-outline gallery-filter-btn active" data-filter="all">
                         Todas as Fotos
                     </button>
-                    <button class="filter-btn" data-filter="douro">
+                    <button class="btn btn-outline gallery-filter-btn" data-filter="douro">
                         Vale do Douro
                     </button>
-                    <button class="filter-btn" data-filter="porto">
-                        Porto
-                    </button>
-                    <button class="filter-btn" data-filter="aveiro">
+                    <button class="btn btn-outline gallery-filter-btn" data-filter="aveiro">
                         Aveiro
                     </button>
-                    <button class="filter-btn" data-filter="braga">
-                        Braga & Guimarães
+                    <button class="btn btn-outline gallery-filter-btn" data-filter="porto">
+                        Porto
                     </button>
-                    <button class="filter-btn" data-filter="outros">
-                        Outros Destinos
+                    <button class="btn btn-outline gallery-filter-btn" data-filter="guimaraes">
+                        Guimarães
+                    </button>
+                    <button class="btn btn-outline gallery-filter-btn" data-filter="fatima">
+                        Fátima
+                    </button>
+                    <button class="btn btn-outline gallery-filter-btn" data-filter="transfers">
+                        Transfers
                     </button>
                 </div>
             </div>
@@ -104,43 +107,43 @@
             <div class="container">
                 <div class="gallery-grid">
                     
-                    <!-- Imagem 1 - Vale do Douro -->
+                    <!-- Douro 1 - Vinhas em Socalcos -->
                     <div class="gallery-item fade-in" data-category="douro">
-                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Vinhas do Vale do Douro ao pôr do sol"
+                        <img src="images/Douro/douro-17.jpeg" 
+                             alt="Vale do Douro - Paisagem das vinhas em socalcos"
                              class="gallery-image"
-                             data-title="Vinhas Douradas do Douro"
-                             data-description="As famosas vinhas em socalcos do Vale do Douro durante o pôr do sol outonal">
+                             data-title="Vinhas em Socalcos do Douro"
+                             data-description="As icónicas vinhas em terraços do Vale do Douro, Património Mundial da UNESCO">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h3>Vinhas Douradas do Douro</h3>
+                                <h3>Vinhas em Socalcos do Douro</h3>
                                 <p>Vale do Douro</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagem 2 - Porto -->
+                    <!-- Porto - Ponte Dom Luís I -->
                     <div class="gallery-item fade-in" data-category="porto">
-                        <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Ponte Dom Luís I e casas coloridas do Porto"
+                        <img src="images/Porto/porto-01.jpg" 
+                             alt="Vista panorâmica do Porto com a Porto"
                              class="gallery-image"
-                             data-title="Ponte Dom Luís I"
-                             data-description="Vista icónica da ponte sobre o Rio Douro com as coloridas casas da Ribeira">
+                             data-title="Porto"
+                             data-description="Vista icónica da Porto sobre o Rio Douro no coração do Porto">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h3>Ponte Dom Luís I</h3>
+                                <h3>Porto</h3>
                                 <p>Porto</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagem 3 - Aveiro -->
+                    <!-- Aveiro - Moliceiros -->
                     <div class="gallery-item fade-in" data-category="aveiro">
-                        <img src="https://images.unsplash.com/photo-1591890243251-cef6b4bcc0e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        <img src="images/Aveiro/aveiro-49.jpeg" 
                              alt="Barcos moliceiros coloridos nos canais de Aveiro"
                              class="gallery-image"
                              data-title="Moliceiros de Aveiro"
-                             data-description="Os tradicionais barcos moliceiros coloridos navegando pelos canais da 'Veneza Portuguesa'">
+                             data-description="Os tradicionais barcos moliceiros coloridos nos canais da 'Veneza Portuguesa'">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
                                 <h3>Moliceiros de Aveiro</h3>
@@ -149,9 +152,9 @@
                         </div>
                     </div>
 
-                    <!-- Imagem 4 - Douro River -->
+                    <!-- Douro - Cruzeiro no Rio -->
                     <div class="gallery-item fade-in" data-category="douro">
-                        <img src="https://images.unsplash.com/photo-1543832923-44667a44c804?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        <img src="images/Douro/douro-21.jpeg" 
                              alt="Cruzeiro no Rio Douro entre as vinhas"
                              class="gallery-image"
                              data-title="Cruzeiro no Douro"
@@ -164,39 +167,24 @@
                         </div>
                     </div>
 
-                    <!-- Imagem 5 - Braga -->
-                    <div class="gallery-item fade-in" data-category="braga">
-                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Santuário do Bom Jesus do Monte em Braga"
+                    <!-- Fátima - Santuário -->
+                    <div class="gallery-item fade-in" data-category="fatima">
+                        <img src="images/Santuário da nossa Senhora de Fátima/fatima-01.jpeg" 
+                             alt="Santuário de Nossa Senhora de Fátima"
                              class="gallery-image"
-                             data-title="Bom Jesus do Monte"
-                             data-description="O majestoso Santuário do Bom Jesus do Monte com sua icónica escadaria barroca">
+                             data-title="Santuário de Fátima"
+                             data-description="O majestoso Santuário de Nossa Senhora de Fátima, local de peregrinação mundial">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h3>Bom Jesus do Monte</h3>
-                                <p>Braga</p>
+                                <h3>Santuário de Fátima</h3>
+                                <p>Fátima</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagem 6 - Livraria Lello -->
-                    <div class="gallery-item fade-in" data-category="porto">
-                        <img src="https://images.unsplash.com/photo-1585208798174-6cedd86019a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Interior da famosa Livraria Lello no Porto"
-                             class="gallery-image"
-                             data-title="Livraria Lello"
-                             data-description="A deslumbrante escadaria em espiral da famosa Livraria Lello, inspiração para Harry Potter">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Livraria Lello</h3>
-                                <p>Porto</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Imagem 7 - Costa Nova -->
+                    <!-- Aveiro - Costa Nova -->
                     <div class="gallery-item fade-in" data-category="aveiro">
-                        <img src="https://images.unsplash.com/photo-1599052516448-7ac9f82e4e2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        <img src="images/Aveiro/aveiro-54.jpg" 
                              alt="Casas coloridas às riscas na Costa Nova"
                              class="gallery-image"
                              data-title="Costa Nova"
@@ -209,9 +197,9 @@
                         </div>
                     </div>
 
-                    <!-- Imagem 8 - Quinta do Douro -->
+                    <!-- Douro - Quinta Vinícola -->
                     <div class="gallery-item fade-in" data-category="douro">
-                        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                        <img src="images/Douro/douro-10.jpeg" 
                              alt="Quinta vinícola no Vale do Douro"
                              class="gallery-image"
                              data-title="Quinta Vinícola"
@@ -224,9 +212,9 @@
                         </div>
                     </div>
 
-                    <!-- Imagem 9 - Castelo de Guimarães -->
-                    <div class="gallery-item fade-in" data-category="braga">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    <!-- Guimarães - Castelo -->
+                    <div class="gallery-item fade-in" data-category="guimaraes">
+                        <img src="images/Guimaraes/guimaraes-09.jpg" 
                              alt="Castelo de Guimarães, berço de Portugal"
                              class="gallery-image"
                              data-title="Castelo de Guimarães"
@@ -239,110 +227,53 @@
                         </div>
                     </div>
 
-                    <!-- Imagem 10 - Azulejos Porto -->
-                    <div class="gallery-item fade-in" data-category="porto">
-                        <img src="https://images.unsplash.com/photo-1518479149297-2b5d7a4b9cb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Azulejos tradicionais portugueses no Porto"
+                    <!-- Transfer - Serviço Premium -->
+                    <div class="gallery-item fade-in" data-category="transfers">
+                        <img src="images/Tranfer/transfer-02.jpg" 
+                             alt="Serviço de transfer premium com conforto e segurança"
                              class="gallery-image"
-                             data-title="Azulejos Portugueses"
-                             data-description="Os belíssimos azulejos azuis e brancos que decoram os edifícios históricos do Porto">
+                             data-title="Transfer Premium"
+                             data-description="Serviço de transfer profissional com máximo conforto e segurança">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h3>Azulejos Portugueses</h3>
-                                <p>Porto</p>
+                                <h3>Transfer Premium</h3>
+                                <p>Transfers</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagem 11 - Viana do Castelo -->
-                    <div class="gallery-item fade-in" data-category="outros">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Santuário de Santa Luzia em Viana do Castelo"
+                    <!-- Aveiro - Vista Panorâmica -->
+                    <div class="gallery-item fade-in" data-category="aveiro">
+                        <img src="images/Aveiro Salinas/aveiro-salinas-02.jpeg" 
+                             alt="Vista panorâmica da cidade de Aveiro e seus canais"
                              class="gallery-image"
-                             data-title="Santa Luzia"
-                             data-description="Vista panorâmica do Santuário de Santa Luzia sobre Viana do Castelo e o Rio Lima">
+                             data-title="Salinas de Aveiro"
+                             data-description="Vista panorâmica dos canais e arquitetura de Aveiro, a Veneza Portuguesa">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h3>Santa Luzia</h3>
-                                <p>Viana do Castelo</p>
+                                <h3>Salinas de Aveiro</h3>
+                                <p>Aveiro</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagem 12 - Monsaraz -->
-                    <div class="gallery-item fade-in" data-category="outros">
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Vila medieval de Monsaraz"
+
+                                        <!-- Aveiro - Vista Panorâmica -->
+                    <div class="gallery-item fade-in" data-category="aveiro">
+                        <img src="images/Guimarães Nossa Senhora da penha/guimaraes-penha-22.jpeg" 
+                             alt="Vista panorâmica da cidade de Aveiro e seus canais"
                              class="gallery-image"
-                             data-title="Vila de Monsaraz"
-                             data-description="A pitoresca vila medieval de Monsaraz com vista sobre a barragem do Alqueva">
+                             data-title="Guimarães Nossa Senhora da Penha"
+                             data-description="Vista de Guimarães, cidade histórica e berço de Portugal">
                         <div class="gallery-overlay">
                             <div class="gallery-info">
-                                <h3>Vila de Monsaraz</h3>
-                                <p>Alentejo</p>
+                                <h3>Guimarães Nossa Senhora da Penha</h3>
+                                <p>Guimarães</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagem 13 - Praia do Minho -->
-                    <div class="gallery-item fade-in" data-category="outros">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Costa do Minho ao pôr do sol"
-                             class="gallery-image"
-                             data-title="Costa do Minho"
-                             data-description="Pôr do sol na selvática costa do Minho, com suas falésias e praias douradas">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Costa do Minho</h3>
-                                <p>Alto Minho</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Imagem 14 - Vinhas Douro Inverno -->
-                    <div class="gallery-item fade-in" data-category="douro">
-                        <img src="https://images.unsplash.com/photo-1609055398043-c6ac380ef95b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Vinhas do Douro no inverno"
-                             class="gallery-image"
-                             data-title="Douro no Inverno"
-                             data-description="As vinhas do Douro cobertas de névoa matinal durante o inverno">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Douro no Inverno</h3>
-                                <p>Vale do Douro</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Imagem 15 - Amarante -->
-                    <div class="gallery-item fade-in" data-category="outros">
-                        <img src="https://images.unsplash.com/photo-1548373710-8d0a03c1aed9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Ponte de Amarante sobre o Rio Tâmega"
-                             class="gallery-image"
-                             data-title="Ponte de Amarante"
-                             data-description="A histórica ponte sobre o Rio Tâmega na romântica cidade de Amarante">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Ponte de Amarante</h3>
-                                <p>Amarante</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Imagem 16 - Torre dos Clérigos -->
-                    <div class="gallery-item fade-in" data-category="porto">
-                        <img src="https://images.unsplash.com/photo-1523909455346-5c107c98efd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Torre dos Clérigos no Porto"
-                             class="gallery-image"
-                             data-title="Torre dos Clérigos"
-                             data-description="A icónica Torre dos Clérigos, símbolo do Porto, destacando-se no skyline da cidade">
-                        <div class="gallery-overlay">
-                            <div class="gallery-info">
-                                <h3>Torre dos Clérigos</h3>
-                                <p>Porto</p>
-                            </div>
-                        </div>
-                    </div>
+   
 
                 </div>
             </div>
@@ -444,7 +375,7 @@
                     <!-- Destaque 1 -->
                     <div class="card fade-in" style="overflow: hidden;">
                         <div style="position: relative;">
-                            <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                            <img src="/images/Douro/douro-01.jpeg" 
                                  alt="Vale do Douro" 
                                  style="width: 100%; height: 250px; object-fit: cover;">
                             <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem;">
@@ -464,7 +395,7 @@
                     <!-- Destaque 2 -->
                     <div class="card fade-in" style="overflow: hidden;">
                         <div style="position: relative;">
-                            <img src="https://images.unsplash.com/photo-1591890243251-cef6b4bcc0e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                            <img src="/images/Aveiro/aveiro-31.jpeg" 
                                  alt="Aveiro" 
                                  style="width: 100%; height: 250px; object-fit: cover;">
                             <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem;">
@@ -498,7 +429,7 @@
                         <a href="tours/" class="btn btn-primary btn-lg">
                             <span class="material-icons">map</span> Ver Todos os Tours
                         </a>
-                        <a href="contact.html" class="btn btn-secondary btn-lg">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
                             <span class="material-icons">phone</span> Planeie a Sua Viagem
                         </a>
                     </div>
@@ -565,9 +496,9 @@
                 
                 <div class="footer-section">
                     <h3>Contactos</h3>
-                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">phone</span> +351 123 456 789</p>
-                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">email</span> info@recreio-celebre-transfers.pt</p>
-                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">location_on</span> Porto, Portugal</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">phone</span> +351 932 046 230</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">email</span> nunofilipegabriel@gmail.com</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">location_on</span> R. Arménia, 781º Esquerdo <br> 4050-066 - Porto, Portugal</p>
                     <p><strong>Atendimento:</strong> 24/7</p>
                 </div>
                 
@@ -606,7 +537,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             
             // ===== SISTEMA DE FILTROS =====
-            const filterBtns = document.querySelectorAll('.filter-btn');
+            const filterBtns = document.querySelectorAll('.gallery-filter-btn');
             const galleryItems = document.querySelectorAll('.gallery-item');
             
             filterBtns.forEach(btn => {

@@ -110,7 +110,7 @@
                                     <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">flight</span> Aeroporto ⇄ Porto Centro
                                 </div>
                                 <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">
-                                    desde 35€
+                                    Consulte-nos
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                         </div>
                     </article>
                     
-                    <!-- Transfer Intercidades -->
+                    <!-- Transfer Intercidades
                     <article class="card fade-in">
                         <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
                              alt="Transfer Intercidades - Estrada entre cidades" class="card-image">
@@ -148,7 +148,7 @@
                                 Ver Rotas
                             </a>
                         </div>
-                    </article>
+                    </article> -->
                     
                     <!-- Transfer Executivo -->
                     <article class="card fade-in">
@@ -156,20 +156,19 @@
                              alt="Transfer Executivo - Sedan de luxo" class="card-image">
                         <div class="card-content">
                             <h3 class="card-title">Transfer Executivo</h3>
-                            <p class="card-text" style="margin-bottom: 3rem;">
+                            <p class="card-text" style="margin-bottom: 0rem;">
                                 Serviço premium com veículos de luxo para reuniões de negócios, 
                                 eventos especiais ou ocasiões que exigem máximo conforto.
                             </p>
                             <div style="margin: 1rem 0;">
                                 <span class="badge" style="background-color: var(--warning-color);">Premium</span>
-                                <span class="badge" style="background-color: var(--accent-color);">Luxo</span>
                             </div>
                             <div style="margin-bottom: 1rem;">
                                 <div style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
                                     <span class="material-icons" style="font-size: 1rem; vertical-align: middle; margin-right: 0.5rem;">business</span>Serviço Empresarial
                                 </div>
                                 <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary-color);">
-                                    desde 60€
+                                    Consulte-nos
                                 </div>
                             </div>
                         </div>
@@ -424,7 +423,7 @@
                                 <ul style="list-style: none; padding: 0;">
                                     <li style="margin-bottom: 0.5rem;">✓ Bancos em pele premium</li>
                                     <li style="margin-bottom: 0.5rem;">✓ Sistema de som de alta qualidade</li>
-                                    <li style="margin-bottom: 0.5rem;">✓ Garrafas de água cortesia</li>
+                                    <!-- <li style="margin-bottom: 0.5rem;">✓ Garrafas de água cortesia</li> -->
                                     <li style="margin-bottom: 0.5rem;">✓ Carregadores USB</li>
                                     <li style="margin-bottom: 0.5rem;">✓ Compartimento refrigerado</li>
                                 </ul>
@@ -453,7 +452,7 @@
         <!-- ===== VANTAGENS DOS NOSSOS TRANSFERS ===== -->
         <section class="section" style="background-color: var(--bg-secondary);">
             <div class="container">
-                <h2 class="section-title fade-in">Porquê Escolher os Nossos Transfers?</h2>
+                <h2 class="section-title fade-in">Porquê Escolher o Nosso Transfer?</h2>
                 <div class="grid grid-4">
                     
                     <!-- Vantagem 1 -->
@@ -541,12 +540,81 @@
                                 <div class="form-group">
                                     <label for="pickup-location" class="form-label">Local de Partida *</label>
                                     <input type="text" id="pickup-location" name="pickup" class="form-control" 
-                                           placeholder="Hotel, morada ou aeroporto..." required>
+                                           list="pickup-suggestions"
+                                           placeholder="Comece a digitar ou selecione..." required>
+                                    <datalist id="pickup-suggestions">
+                                        <option value="Aeroporto Francisco Sá Carneiro (OPO)">
+                                        <option value="Estação de São Bento - Porto">
+                                        <option value="Estação de Campanhã - Porto">
+                                        <option value="Ribeira do Porto">
+                                        <option value="Cedofeita - Porto">
+                                        <option value="Foz do Douro - Porto">
+                                        <option value="Matosinhos">
+                                        <option value="Vila Nova de Gaia">
+                                        <option value="Hotel Vila Galé Porto">
+                                        <option value="Hotel The Yeatman">
+                                        <option value="Hotel Intercontinental Porto">
+                                        <option value="Hotel Pestana Porto">
+                                        <option value="Braga Centro">
+                                        <option value="Universidade do Minho - Braga">
+                                        <option value="Aveiro Centro">
+                                        <option value="Universidade de Aveiro">
+                                        <option value="Coimbra Centro">
+                                        <option value="Universidade de Coimbra">
+                                        <option value="Lisboa Aeroporto">
+                                        <option value="Lisboa Oriente">
+                                        <option value="Guimarães Centro">
+                                        <option value="Viana do Castelo">
+                                        <option value="Santiago de Compostela">
+                                        <option value="Fátima">
+                                        <option value="Óbidos">
+                                        <option value="Terminal de Cruzeiros - Leixões">
+                                    </datalist>
                                 </div>
                                 <div class="form-group">
                                     <label for="destination" class="form-label">Destino *</label>
                                     <input type="text" id="destination" name="destination" class="form-control" 
-                                           placeholder="Local de chegada..." required>
+                                           list="destination-suggestions"
+                                           placeholder="Comece a digitar ou selecione..." required>
+                                    <datalist id="destination-suggestions">
+                                        <option value="Aeroporto Francisco Sá Carneiro (OPO)">
+                                        <option value="Estação de São Bento - Porto">
+                                        <option value="Estação de Campanhã - Porto">
+                                        <option value="Ribeira do Porto">
+                                        <option value="Cedofeita - Porto">
+                                        <option value="Foz do Douro - Porto">
+                                        <option value="Matosinhos">
+                                        <option value="Vila Nova de Gaia">
+                                        <option value="Hotel Vila Galé Porto">
+                                        <option value="Hotel The Yeatman">
+                                        <option value="Hotel Intercontinental Porto">
+                                        <option value="Hotel Pestana Porto">
+                                        <option value="Braga Centro">
+                                        <option value="Universidade do Minho - Braga">
+                                        <option value="Aveiro Centro">
+                                        <option value="Universidade de Aveiro">
+                                        <option value="Coimbra Centro">
+                                        <option value="Universidade de Coimbra">
+                                        <option value="Lisboa Aeroporto">
+                                        <option value="Lisboa Oriente">
+                                        <option value="Guimarães Centro">
+                                        <option value="Viana do Castelo">
+                                        <option value="Santiago de Compostela">
+                                        <option value="Fátima">
+                                        <option value="Óbidos">
+                                        <option value="Terminal de Cruzeiros - Leixões">
+                                        <option value="Vale do Douro - Peso da Régua">
+                                        <option value="Vale do Douro - Pinhão">
+                                        <option value="Quinta do Seixo - Douro">
+                                        <option value="Quinta da Pacheca - Douro">
+                                        <option value="Monsaraz">
+                                        <option value="Évora">
+                                        <option value="Sintra">
+                                        <option value="Cascais">
+                                        <option value="Nazaré">
+                                        <option value="Batalha">
+                                        <option value="Alcobaça">
+                                    </datalist>
                                 </div>
                             </div>
                             
@@ -658,13 +726,21 @@
                                 <p style="font-size: 0.875rem; color: var(--text-secondary);">
                                     Resposta garantida em menos de 2 horas
                                 </p>
-                                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                                    <a href="#" class="whatsapp-btn btn btn-sm" 
+                                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                                    <a href="#" class="whatsapp-btn btn btn-accent" 
                                        data-phone="351123456789" 
-                                       data-message="Olá! Gostaria de reservar um transfer.">
-                                        <span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> WhatsApp
+                                       data-message="Olá! Gostaria de reservar um transfer."
+                                       style="background-color: #25D366; border-color: #25D366; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+                                        <i class="bi bi-whatsapp" style="font-size: 1.2rem;"></i> WhatsApp
                                     </a>
-                                    <a href="tel:+351123456789" class="btn btn-sm"><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> Ligar Agora</a>
+                                    <a href="tel:+351123456789" class="btn btn-primary" 
+                                       style="display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+                                        <i class="bi bi-telephone-fill" style="font-size: 1rem;"></i> Ligar Agora
+                                    </a>
+                                </div>
+                                <div style="margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-secondary);">
+                                    <i class="bi bi-clock" style="margin-right: 0.25rem;"></i>
+                                    Atendimento 24/7 • Resposta imediata
                                 </div>
                             </div>
                         </div>
@@ -707,9 +783,9 @@
                 
                 <div class="footer-section">
                     <h3>Contactos</h3>
-                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">phone</span> +351 123 456 789</p>
-                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">email</span> info@recreio-celebre-transfers.pt</p>
-                    <p><span class="material-icons" style="vertical-align: middle; font-size: 1rem;">location_on</span> Porto, Portugal</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">phone</span> +351 932 046 230</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">email</span> nunofilipegabriel@gmail.com</p>
+                    <p><span class="material-icons" style="font-size: 16px; vertical-align: middle;">location_on</span> R. Arménia, 781º Esquerdo <br> 4050-066 - Porto, Portugal</p>
                     <p><strong>Atendimento:</strong> 24/7</p>
                 </div>
                 
@@ -756,41 +832,185 @@
                 });
             }
             
-            // Cálculo automático de preço (simulado)
+            // Melhorar a experiência dos campos de localização
             const pickupInput = document.getElementById('pickup-location');
             const destinationInput = document.getElementById('destination');
             const passengersSelect = document.getElementById('passengers');
             
+            // Adicionar ícones aos campos de localização
+            if (pickupInput) {
+                addLocationIcon(pickupInput);
+                // Auto-complete melhorado
+                pickupInput.addEventListener('input', function() {
+                    handleLocationInput(this);
+                });
+            }
+            
+            if (destinationInput) {
+                addLocationIcon(destinationInput);
+                destinationInput.addEventListener('input', function() {
+                    handleLocationInput(this);
+                });
+            }
+            
+            function addLocationIcon(input) {
+                const wrapper = document.createElement('div');
+                wrapper.style.position = 'relative';
+                wrapper.style.display = 'flex';
+                wrapper.style.alignItems = 'center';
+                
+                input.parentNode.insertBefore(wrapper, input);
+                wrapper.appendChild(input);
+                
+                const icon = document.createElement('i');
+                icon.className = 'bi bi-geo-alt-fill';
+                icon.style.position = 'absolute';
+                icon.style.right = '12px';
+                icon.style.color = 'var(--text-secondary)';
+                icon.style.pointerEvents = 'none';
+                icon.style.zIndex = '1';
+                
+                wrapper.appendChild(icon);
+                
+                // Ajustar padding do input
+                input.style.paddingRight = '35px';
+            }
+            
+            function handleLocationInput(input) {
+                const value = input.value.toLowerCase();
+                
+                // Sugestões contextuais baseadas no que o usuário digita
+                if (value.includes('aeroporto') || value.includes('opo')) {
+                    highlightSuggestion(input, 'Aeroporto Francisco Sá Carneiro (OPO)');
+                } else if (value.includes('hotel')) {
+                    showHotelSuggestions(input);
+                } else if (value.includes('estação') || value.includes('comboio')) {
+                    highlightSuggestion(input, 'Estação de São Bento - Porto');
+                } else if (value.includes('universidade')) {
+                    showUniversitySuggestions(input);
+                }
+                
+                // Recalcular preço quando ambos os campos estão preenchidos
+                calculatePrice();
+            }
+            
+            function highlightSuggestion(input, suggestion) {
+                // Função para destacar sugestão específica
+                console.log(`Sugestão para ${input.id}: ${suggestion}`);
+            }
+            
+            function showHotelSuggestions(input) {
+                // Filtrar sugestões de hotéis
+                const hotelOptions = Array.from(input.list.options).filter(option => 
+                    option.value.toLowerCase().includes('hotel')
+                );
+                console.log(`Hotéis disponíveis: ${hotelOptions.length}`);
+            }
+            
+            function showUniversitySuggestions(input) {
+                // Filtrar sugestões de universidades
+                const universityOptions = Array.from(input.list.options).filter(option => 
+                    option.value.toLowerCase().includes('universidade')
+                );
+                console.log(`Universidades disponíveis: ${universityOptions.length}`);
+            }
+            
+            // Cálculo automático de preço melhorado
             function calculatePrice() {
                 const pickup = pickupInput?.value.toLowerCase() || '';
                 const destination = destinationInput?.value.toLowerCase() || '';
                 const passengers = parseInt(passengersSelect?.value) || 0;
                 
                 let basePrice = 0;
+                let routeName = '';
                 
-                // Preços baseados em rotas conhecidas
-                if ((pickup.includes('aeroporto') || pickup.includes('opo')) && 
-                    (destination.includes('porto') || destination.includes('centro'))) {
-                    basePrice = passengers <= 3 ? 35 : 55;
-                } else if ((pickup.includes('porto') && destination.includes('braga')) ||
-                          (pickup.includes('braga') && destination.includes('porto'))) {
-                    basePrice = passengers <= 3 ? 65 : 90;
-                } else if ((pickup.includes('porto') && destination.includes('aveiro')) ||
-                          (pickup.includes('aveiro') && destination.includes('porto'))) {
-                    basePrice = passengers <= 3 ? 80 : 110;
-                } else if ((pickup.includes('porto') && destination.includes('lisboa')) ||
-                          (pickup.includes('lisboa') && destination.includes('porto'))) {
-                    basePrice = passengers <= 3 ? 180 : 250;
-                } else {
-                    // Preço genérico baseado na distância estimada
-                    basePrice = passengers <= 3 ? 50 : 75;
+                // Rotas predefinidas com preços
+                const routes = {
+                    'aeroporto-porto': { price: [35, 55], keywords: ['aeroporto', 'opo'], destinations: ['porto', 'ribeira', 'cedofeita', 'foz'] },
+                    'porto-braga': { price: [65, 90], keywords: ['porto'], destinations: ['braga'] },
+                    'porto-aveiro': { price: [80, 110], keywords: ['porto'], destinations: ['aveiro'] },
+                    'porto-coimbra': { price: [120, 160], keywords: ['porto'], destinations: ['coimbra'] },
+                    'porto-lisboa': { price: [180, 250], keywords: ['porto'], destinations: ['lisboa'] },
+                    'porto-santiago': { price: [200, 280], keywords: ['porto'], destinations: ['santiago'] },
+                    'porto-douro': { price: [90, 130], keywords: ['porto'], destinations: ['douro', 'peso da régua', 'pinhão', 'quinta'] },
+                    'porto-fatima': { price: [140, 190], keywords: ['porto'], destinations: ['fátima'] },
+                    'porto-guimaraes': { price: [50, 75], keywords: ['porto'], destinations: ['guimarães'] },
+                    'porto-viana': { price: [85, 120], keywords: ['porto'], destinations: ['viana'] }
+                };
+                
+                // Verificar rotas conhecidas
+                for (const [route, data] of Object.entries(routes)) {
+                    const hasOrigin = data.keywords.some(keyword => pickup.includes(keyword));
+                    const hasDestination = data.destinations.some(dest => destination.includes(dest));
+                    
+                    if (hasOrigin && hasDestination) {
+                        basePrice = passengers <= 3 ? data.price[0] : data.price[1];
+                        routeName = route;
+                        break;
+                    }
+                    
+                    // Verificar rota inversa
+                    const hasOriginInverse = data.destinations.some(dest => pickup.includes(dest));
+                    const hasDestinationInverse = data.keywords.some(keyword => destination.includes(keyword));
+                    
+                    if (hasOriginInverse && hasDestinationInverse) {
+                        basePrice = passengers <= 3 ? data.price[0] : data.price[1];
+                        routeName = route + '-inverse';
+                        break;
+                    }
+                }
+                
+                // Preço genérico se não encontrar rota específica
+                if (basePrice === 0 && pickup && destination && passengers > 0) {
+                    // Estimar baseado na distância aproximada
+                    const estimatedDistance = estimateDistance(pickup, destination);
+                    basePrice = passengers <= 3 ? Math.max(35, estimatedDistance * 0.8) : Math.max(55, estimatedDistance * 1.1);
                 }
                 
                 // Mostrar preço estimado
                 const priceElement = document.querySelector('[style*="A calcular"]');
                 if (priceElement && basePrice > 0) {
-                    priceElement.textContent = `desde ${basePrice}€`;
+                    priceElement.textContent = `desde ${Math.round(basePrice)}€`;
+                    priceElement.style.color = 'var(--success-color)';
+                    
+                    // Adicionar informação extra sobre a rota
+                    const parentDiv = priceElement.closest('div');
+                    let routeInfo = parentDiv.querySelector('.route-info');
+                    if (!routeInfo) {
+                        routeInfo = document.createElement('div');
+                        routeInfo.className = 'route-info';
+                        routeInfo.style.fontSize = '0.75rem';
+                        routeInfo.style.color = 'var(--text-secondary)';
+                        routeInfo.style.marginTop = '0.25rem';
+                        parentDiv.appendChild(routeInfo);
+                    }
+                    
+                    if (routeName) {
+                        routeInfo.textContent = `Rota: ${routeName.replace('-', ' → ').toUpperCase()}`;
+                    } else {
+                        routeInfo.textContent = 'Preço estimado baseado na distância';
+                    }
+                } else if (priceElement) {
+                    priceElement.textContent = 'A calcular...';
+                    priceElement.style.color = 'var(--primary-color)';
                 }
+            }
+            
+            function estimateDistance(pickup, destination) {
+                // Estimativa muito básica de distância baseada em palavras-chave
+                const longDistanceKeywords = ['lisboa', 'santiago', 'fátima', 'évora', 'sintra'];
+                const mediumDistanceKeywords = ['coimbra', 'aveiro', 'braga', 'douro'];
+                
+                const isLongDistance = longDistanceKeywords.some(keyword => 
+                    pickup.includes(keyword) || destination.includes(keyword)
+                );
+                const isMediumDistance = mediumDistanceKeywords.some(keyword => 
+                    pickup.includes(keyword) || destination.includes(keyword)
+                );
+                
+                if (isLongDistance) return 200; // ~200km
+                if (isMediumDistance) return 80;  // ~80km
+                return 50; // Distância local ~50km
             }
             
             // Event listeners para cálculo automático
@@ -800,7 +1020,44 @@
                     element.addEventListener('change', calculatePrice);
                 }
             });
+            
+            // Pré-popular campos se vier de URL params
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('from')) {
+                pickupInput.value = decodeURIComponent(urlParams.get('from'));
+            }
+            if (urlParams.get('to')) {
+                destinationInput.value = decodeURIComponent(urlParams.get('to'));
+            }
+            if (urlParams.get('passengers')) {
+                passengersSelect.value = urlParams.get('passengers');
+            }
+            
+            // Calcular preço inicial se campos estão preenchidos
+            if (pickupInput.value && destinationInput.value) {
+                calculatePrice();
+            }
         });
+        
+        // TODO: Integração futura com Google Places API
+        /*
+        function initGooglePlaces() {
+            if (typeof google !== 'undefined' && google.maps) {
+                const pickupAutocomplete = new google.maps.places.Autocomplete(
+                    document.getElementById('pickup-location'),
+                    { componentRestrictions: { country: ['pt', 'es'] } }
+                );
+                
+                const destinationAutocomplete = new google.maps.places.Autocomplete(
+                    document.getElementById('destination'),
+                    { componentRestrictions: { country: ['pt', 'es'] } }
+                );
+                
+                pickupAutocomplete.addListener('place_changed', calculatePrice);
+                destinationAutocomplete.addListener('place_changed', calculatePrice);
+            }
+        }
+        */
     </script>
 </body>
 </html>

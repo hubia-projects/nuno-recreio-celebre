@@ -115,11 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (header) {
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 100) {
-                    header.style.background = 'rgba(255, 255, 255, 0.95)';
-                    header.style.backdropFilter = 'blur(10px)';
+                    header.classList.add('scrolled');
                 } else {
-                    header.style.background = '';
-                    header.style.backdropFilter = '';
+                    header.classList.remove('scrolled');
                 }
             });
         }
